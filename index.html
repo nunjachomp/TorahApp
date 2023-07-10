@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>The Torah, Simplified</title>
 </head>
 <body>
-    <div class="main-container">
+
+
+    <!-- <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> -->
+
+
+    <div class="main-container-dropdown">
     <h1>The Torah, Simplified</h1>
         <div class="two-main-sections">
-            <button class="section1"></button>
+            <button onclick="myFunction()"  class="section1">Section 1</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
             <button class="section2"></button>
+            <div id="myDropdown2" class="dropdown-content2">
+                <!-- <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a> -->
+              </div>
         </div>
         <div class="displayResults">
         </div>
     </div>
+
+
+
+
+
+
     <script src="./js/dropdowns.js"></script>
 </body>
 </html>
