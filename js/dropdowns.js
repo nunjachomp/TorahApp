@@ -1,21 +1,8 @@
 const loveGodButton = document.querySelector(".section1");
 const displayResults = document.querySelector(".displayResults");
-loveGodButton.addEventListener("click", []);
-
-// function getVerses() {
-//     fetch("https://649e6352245f077f3e9c56d0.mockapi.io/api/v1/calculation")
-//         .then((res) => {
-//         return res.json();
-//     })
-//     .then((versesJSON) => console.log(versesJSON[1].text))
-  
-// }
-
-// getVerses();
-
-// function displayMessage() {
-//     console.log(versesJSON[1].text);
-// }
+loveGodButton.addEventListener("click", main);
+const loveNeighborButton = document.querySelector(".section2");
+loveNeighborButton.addEventListener("click", main2);
 
 async function getVerses(){
     let response = await fetch("https://649e6352245f077f3e9c56d0.mockapi.io/api/v1/calculation");
@@ -28,14 +15,20 @@ async function getVerses(){
    async function main() {
     try {
       let abc = await getVerses();
-      console.log(abc);
+    //   console.log(abc);
       displayResults.innerHTML = `${abc[1].text}`;
     } catch (error) {
       console.error(error);
     }
   }
-  
-  main();
+    //main();
 
-
+async function main2() {
+    try {
+      let abc = await getVerses();
+      displayResults.innerHTML = `${abc[2].text}`;
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
