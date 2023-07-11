@@ -91,7 +91,8 @@ function myFunction() {
     let data = await response.json();
     data = JSON.stringify(data);
     data = JSON.parse(data);
-    console.log(data);
+    console.log(data['query']['pages']['2180929']['title']);
+    console.log(data['query']['pages']['2180929']['extract']);
    }
 
  
