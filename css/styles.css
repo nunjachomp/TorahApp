@@ -1,7 +1,13 @@
 .banner {
   background-image:url(../images/PaleoLev.png);
+  height: 150px;
+  width: 790px;
 }
 
+h1 {
+  position: absolute;
+  top: 150px;
+}
 
 /* Dropdown Button */
 .section1, .section2 {
@@ -22,6 +28,7 @@
   .two-main-sections {
     position: relative;
     display: inline-block;
+    top: 220px;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -58,3 +65,8 @@
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
   .show2 {display:block;}
+
+  .displayResults {
+    position: absolute;
+    top: 308px;
+  }
