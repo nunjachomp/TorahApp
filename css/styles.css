@@ -9,6 +9,11 @@ h1 {
   top: 150px;
 }
 
+h3 {
+  position: absolute;
+  top: 221px;
+}
+
 /* Dropdown Button */
 .section1, .section2 {
     background-color: #3498DB;
@@ -29,6 +34,7 @@ h1 {
     position: relative;
     display: inline-block;
     top: 220px;
+    left: 226px;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -68,5 +74,5 @@ h1 {
 
   .displayResults {
     position: absolute;
-    top: 308px;
+    top: 360px;
   }
