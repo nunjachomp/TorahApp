@@ -21,12 +21,42 @@ async function getVerses(){
 
 //Fetch Catergory Love God Verse
 
-   async function main() {
+  //  async function main() {
+  //   try {
+  //     let abc = await getVerses();
+  //   //   console.log(abc);
+  //     displayResults.innerHTML = `${abc[14].text}`;
+
+  //     async function fetchAndDisplayImage() {
+  //       try {
+  //         const response = await fetch('https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg');
+  //         const blob = await response.blob();
+  //         const imageUrl = URL.createObjectURL(blob);
+  //         const imgElement = document.createElement('img');
+  //         imgElement.src = imageUrl;
+  //         document.querySelector(".display-API-Image").appendChild(imgElement);
+  //       } catch (error) {
+  //         console.log('Error:', error);
+  //       }
+  //     }
+  //     fetchAndDisplayImage();
+
+  //     let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
+  //     let data = await response.json();
+  //     data = JSON.stringify(data);
+  //     data = JSON.parse(data);
+  //     displayApiTitle.innerHTML = (data['query']['pages']['2180929']['title']);
+  //     displayAPI.innerHTML = (data['query']['pages']['2180929']['extract']);
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
+
+  async function main() {
     try {
       let abc = await getVerses();
-    //   console.log(abc);
       displayResults.innerHTML = `${abc[14].text}`;
-
+  
       async function fetchAndDisplayImage() {
         try {
           const response = await fetch('https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg');
@@ -39,18 +69,34 @@ async function getVerses(){
           console.log('Error:', error);
         }
       }
-      fetchAndDisplayImage();
-
-      let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
-      let data = await response.json();
-      data = JSON.stringify(data);
-      data = JSON.parse(data);
-      displayApiTitle.innerHTML = (data['query']['pages']['2180929']['title']);
-      displayAPI.innerHTML = (data['query']['pages']['2180929']['extract']);
+  
+      // Check if API information is already displayed
+      if (displayApiTitle.innerHTML !== "" && displayAPI.innerHTML !== "") {
+        // Remove API information
+        displayApiTitle.innerHTML = "";
+        displayAPI.innerHTML = "";
+        // Remove API image
+        const apiImage = document.querySelector(".display-API-Image img");
+        if (apiImage) {
+          apiImage.remove();
+        }
+      } else {
+        // Fetch and display API information
+        let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
+        let data = await response.json();
+        data = JSON.stringify(data);
+        data = JSON.parse(data);
+        displayApiTitle.innerHTML = (data['query']['pages']['2180929']['title']);
+        displayAPI.innerHTML = (data['query']['pages']['2180929']['extract']);
+        fetchAndDisplayImage();
+      }
     } catch (error) {
       console.error(error);
     }
   }
+
+
+  
 
 //Fetch Category Love Neighbor Verse
 
