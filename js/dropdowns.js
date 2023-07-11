@@ -25,7 +25,7 @@ async function getVerses(){
     try {
       let abc = await getVerses();
     //   console.log(abc);
-      displayResults.innerHTML = `${abc[1].text}`;
+      displayResults.innerHTML = `${abc[14].text}`;
 
       fetch('https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg')
       .then(response => response.blob())
