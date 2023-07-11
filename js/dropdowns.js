@@ -45,14 +45,12 @@ async function main2() {
   }
 
 //Primary Buttons
-//-------------------------------------------------------------
-  /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+//--------Button-1---------------------------------------------
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.section1')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -65,12 +63,13 @@ function myFunction() {
       }
     }
   }
-  //
+  
+  //--------Button-2------------------------------------------
+
   function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.section2')) {
       var dropdowns = document.getElementsByClassName("dropdown-content2");
@@ -83,9 +82,11 @@ function myFunction() {
       }
     }
   }
+  
   //----------------------------------------------------------
 
- 
+ //Working Wikipedia API Template//
+
   async function getVerses(){
     let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
     let data = await response.json();
@@ -95,4 +96,5 @@ function myFunction() {
     console.log(data['query']['pages']['2180929']['extract']);
    }
 
+   //---------------------------------------------------------
  
