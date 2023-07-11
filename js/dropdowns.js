@@ -85,4 +85,13 @@ function myFunction() {
   }
   //----------------------------------------------------------
 
-  
+ 
+  async function getVerses(){
+    let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
+    let data = await response.json();
+    data = JSON.stringify(data);
+    data = JSON.parse(data);
+    console.log(data);
+   }
+
+ 
