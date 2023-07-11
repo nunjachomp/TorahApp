@@ -4,6 +4,11 @@ loveGodButton.addEventListener("click", main);
 const loveNeighborButton = document.querySelector(".section2");
 loveNeighborButton.addEventListener("click", main2);
 
+const displayApiImage = document.querySelector(".display-API-Image");
+const displayApiTitle = document.querySelector(".API-Display-Title");
+const displayAPI = document.querySelector(".API-Display");
+const noIdols = document.querySelector(".mitz2");
+
 //Fetch All Verses
 
 async function getVerses(){
@@ -21,6 +26,25 @@ async function getVerses(){
       let abc = await getVerses();
     //   console.log(abc);
       displayResults.innerHTML = `${abc[1].text}`;
+
+      fetch('https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg')
+      .then(response => response.blob())
+      .then(blob => {
+        const imageUrl = URL.createObjectURL(blob);
+        const imgElement = document.createElement('img');
+        imgElement.src = imageUrl;
+        document.querySelector(".display-API-Image").appendChild(imgElement);
+      })
+      .catch(error => {
+        console.log('Error:', error);
+      });
+
+      let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
+      let data = await response.json();
+      data = JSON.stringify(data);
+      data = JSON.parse(data);
+      displayApiTitle.innerHTML = (data['query']['pages']['2180929']['title']);
+      displayAPI.innerHTML = (data['query']['pages']['2180929']['extract']);
     } catch (error) {
       console.error(error);
     }
@@ -32,17 +56,16 @@ async function main2() {
     try {
       let abc = await getVerses();
       displayResults.innerHTML = `${abc[2].text}`;
+
     } catch (error) {
       console.error(error);
     }
   }
 
-  const mitzvah1 = document.querySelector(".mitzvah1");
-
-  async function mitzvahOne() {
+  async function mitzvahTwo() {
     try {
       let abc = await getVerses();
-      mitzvah1.innerHTML = `${abc[4].text}`;
+      noIdols.appendChild = `<li>${abc[4].text}<li>`;
       console.log(abc[4].text)
     } catch (error) {
       console.error(error);
@@ -91,7 +114,7 @@ function myFunction() {
   //----------------------------------------------------------
 
  //Working Wikipedia API Template//
-
+  //
   // async function getVerses(){
   //   let response = await fetch("https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929");
   //   let data = await response.json();
@@ -100,6 +123,14 @@ function myFunction() {
   //   console.log(data['query']['pages']['2180929']['title']);
   //   console.log(data['query']['pages']['2180929']['extract']);
   //  }
-
-   //---------------------------------------------------------
+  //
+  // images format 
+  //
+  //  let wikiImage = await fetch("https://en.wikipedia.org/w/api.php?action=query&origin=*&titles=Asherah_pole&prop=pageimages&format=json&pithumbsize=700");
+  // let imgData = await wikiImage.json();
+  // imgData = JSON.stringify(imgData);
+  // imgData = JSON.parse(imgData);
+  // displayApiImage.innerHTML = (imgData['query']['pages']['2180929']['pageimage']);
+  //
+  //---------------------------------------------------------
  

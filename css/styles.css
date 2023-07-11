@@ -76,3 +76,29 @@ h3 {
     position: absolute;
     top: 360px;
   }
+
+  .display-API-Image {
+    width: 130px;
+    position: absolute;
+    right: 54px;
+    top: 50px;
+  }
+
+  img {
+    width: 105px;
+  }
+
+  .API-Display-Title {
+    position: absolute;
+    right: 61px;
+    top: 223px;
+    font-size: 26px;
+    color:  red;
+  }
+
+  .API-Display {
+    max-width: 150px;
+    position: absolute;
+    right: 50px;
+    top: 264px;
+  }
