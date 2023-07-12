@@ -24,7 +24,8 @@ async function getVerses(){
   async function main() {
     try {
       let abc = await getVerses();
-      displayResults.innerHTML = `${abc[14].text}`;
+      console.log(abc[0]['LoveGod-MAIN'][1]['loveGodText']);
+      displayResults.innerHTML = `${abc[0]['LoveGod-MAIN'][1]['loveGodText']}`;
   
       async function fetchAndDisplayImage() {
         try {
@@ -72,7 +73,7 @@ async function getVerses(){
 async function main2() {
     try {
       let abc = await getVerses();
-      displayResults.innerHTML = `${abc[2].text}`;
+      displayResults.innerHTML = `${abc[1]['LoveNeighbor-MAIN'][0]['loveNeighborText']}`;
 
     } catch (error) {
       console.error(error);
