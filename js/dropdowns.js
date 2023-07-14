@@ -72,24 +72,24 @@ class GetVersesAndDisplayThem {
   }
 }
 
-const loveGodButton = document.querySelector(".section1");
 const displayResults = document.querySelector(".displayResults");
 const displayApiImage = document.querySelector(".display-API-Image");
 const displayApiTitle = document.querySelector(".API-Display-Title");
 const displayAPI = document.querySelector(".API-Display");
 
+//----------------INSTANCE-1------------------------
+const loveGodButton = document.querySelector(".section1");
 const loveGodPage = new GetVersesAndDisplayThem(
   "displayResults",
   "[0]['LoveGod-MAIN'][1]['loveGodText']",
-  "https://upload.wikimedia.org/wikipedia/commons/1/1e/Maurycy_Gottlieb_-_Jews_Praying_in_the_Synagogue_on_Yom_Kippur.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929",
   "['query']['pages']['2180929']['title']",
   "['query']['pages']['2180929']['extract']"
 );
 
-async function Clicker() {
+async function Clicker1() {
   let wikiClickCount = 0;
-
   loveGodButton.addEventListener("click", () => {
     wikiClickCount++;
     if (wikiClickCount === 1) {
@@ -102,7 +102,35 @@ async function Clicker() {
     }
   });
 }
-Clicker();
+Clicker1();
+
+//----------------INSTANCE-2------------------------
+const loveNeighborButton = document.querySelector(".section2");
+const loveNeighborPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[1]['LoveNeighbor-MAIN'][0]['loveNeighborText']",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shabbat_Candles.jpg/300px-Shabbat_Candles.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=600&pageids=28809",
+  "['query']['pages']['28809']['title']",
+  "['query']['pages']['28809']['extract']"
+);
+
+async function Clicker2() {
+  let wikiClickCount = 0;
+
+  loveNeighborButton.addEventListener("click", () => {
+    wikiClickCount++;
+    if (wikiClickCount === 1) {
+      loveNeighborPage.getVerses();
+      loveNeighborPage.getAndPostWikiImage();
+      loveNeighborPage.getWikiTitleAndSummary();
+    } else if (wikiClickCount === 2) {
+      loveNeighborPage.removeAPIElements();
+      wikiClickCount = 0;
+    }
+  });
+}
+Clicker2();
 
 
 //Primary Buttons Functionality
