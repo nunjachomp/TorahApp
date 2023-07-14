@@ -132,6 +132,38 @@ async function Clicker2() {
 }
 Clicker2();
 
+//----------------INSTANCE-3------------------------
+const NoOthergodsButton = document.querySelector(".btn");
+const NoOthergodsPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[2]['NoOthergods'][1]['noOthergodsText']",
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929",
+  "['query']['pages']['2180929']['title']",
+  "['query']['pages']['2180929']['extract']"
+);
+
+async function Clicker1() {
+  let wikiClickCount = 0;
+  NoOthergodsButton.addEventListener("click", () => {
+    wikiClickCount++;
+    if (wikiClickCount === 1) {
+      NoOthergodsPage.getVerses();
+      NoOthergodsPage.getAndPostWikiImage();
+      NoOthergodsPage.getWikiTitleAndSummary();
+    } else if (wikiClickCount === 2) {
+      NoOthergodsPage.removeAPIElements();
+      wikiClickCount = 0;
+    }
+  });
+}
+Clicker1();
+
+
+
+
+
+
 
 //Primary Buttons Functionality
 //--------Button-1---------------------------------------------
