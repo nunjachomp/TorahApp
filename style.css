@@ -91,6 +91,10 @@ body {
     background-color: #ccc;
     margin-bottom: 10px;
 }
+img{
+    height: 165px;
+}
+
 .card-2{
     display: flex;
     flex-direction: column;
