@@ -77,7 +77,23 @@ const displayApiImage = document.querySelector(".display-API-Image");
 const displayApiTitle = document.querySelector(".API-Display-Title");
 const displayAPI = document.querySelector(".API-Display");
 
-//----------------INSTANCE-1------------------------
+async function Clicker(button, page) {
+  let wikiClickCount = 0;
+  button.addEventListener("click", () => {
+    wikiClickCount++;
+    if (wikiClickCount === 1) {
+      page.getVerses();
+      page.getAndPostWikiImage();
+      page.getWikiTitleAndSummary();
+    } else if (wikiClickCount === 2) {
+      page.removeAPIElements();
+      wikiClickCount = 0;
+    }
+  });
+}
+
+
+//----------------INSTANCE-T0------------------------
 const loveGodButton = document.querySelector(".section1");
 const loveGodPage = new GetVersesAndDisplayThem(
   "displayResults",
@@ -88,23 +104,9 @@ const loveGodPage = new GetVersesAndDisplayThem(
   "['query']['pages']['2180929']['extract']"
 );
 
-async function Clicker1() {
-  let wikiClickCount = 0;
-  loveGodButton.addEventListener("click", () => {
-    wikiClickCount++;
-    if (wikiClickCount === 1) {
-      loveGodPage.getVerses();
-      loveGodPage.getAndPostWikiImage();
-      loveGodPage.getWikiTitleAndSummary();
-    } else if (wikiClickCount === 2) {
-      loveGodPage.removeAPIElements();
-      wikiClickCount = 0;
-    }
-  });
-}
-Clicker1();
+Clicker(loveGodButton, loveGodPage);
 
-//----------------INSTANCE-2------------------------
+//----------------INSTANCE-T1------------------------
 const loveNeighborButton = document.querySelector(".section2");
 const loveNeighborPage = new GetVersesAndDisplayThem(
   "displayResults",
@@ -115,54 +117,109 @@ const loveNeighborPage = new GetVersesAndDisplayThem(
   "['query']['pages']['28809']['extract']"
 );
 
-async function Clicker2() {
-  let wikiClickCount = 0;
+Clicker(loveNeighborButton, loveNeighborPage);
 
-  loveNeighborButton.addEventListener("click", () => {
-    wikiClickCount++;
-    if (wikiClickCount === 1) {
-      loveNeighborPage.getVerses();
-      loveNeighborPage.getAndPostWikiImage();
-      loveNeighborPage.getWikiTitleAndSummary();
-    } else if (wikiClickCount === 2) {
-      loveNeighborPage.removeAPIElements();
-      wikiClickCount = 0;
-    }
-  });
-}
-Clicker2();
-
-//----------------INSTANCE-3------------------------
-const NoOthergodsButton = document.querySelector(".btn");
-const NoOthergodsPage = new GetVersesAndDisplayThem(
+//----------------INSTANCE-1------------------------
+const noOthergodsButton = document.querySelector(".btnNoOthergodsButton");
+const noOthergodsPage = new GetVersesAndDisplayThem(
   "displayResults",
   "[2]['NoOthergods'][1]['noOthergodsText']",
+);
+
+Clicker(noOthergodsButton, noOthergodsPage);
+
+//----------------INSTANCE-2------------------------
+const noIdolsButton = document.querySelector(".btnNoIdols");
+const noIdolsPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[3]['NoIdols'][0]['noIdolsText']",
   "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929",
   "['query']['pages']['2180929']['title']",
   "['query']['pages']['2180929']['extract']"
 );
 
-async function Clicker1() {
-  let wikiClickCount = 0;
-  NoOthergodsButton.addEventListener("click", () => {
-    wikiClickCount++;
-    if (wikiClickCount === 1) {
-      NoOthergodsPage.getVerses();
-      NoOthergodsPage.getAndPostWikiImage();
-      NoOthergodsPage.getWikiTitleAndSummary();
-    } else if (wikiClickCount === 2) {
-      NoOthergodsPage.removeAPIElements();
-      wikiClickCount = 0;
-    }
-  });
-}
-Clicker1();
+Clicker(noIdolsButton, noIdolsPage);
 
+//----------------INSTANCE-3------------------------
+const noNameVainButton = document.querySelector(".btnNoNameVain");
+const noNameVainPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[4]['NoNameVain'][0]['noVainText']",
+);
 
+Clicker(noNameVainButton, noNameVainPage);
 
+//----------------INSTANCE-4------------------------
+const shabbatButton = document.querySelector(".btnShabbat");
+const shabbatPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shabbat_Candles.jpg/300px-Shabbat_Candles.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=600&pageids=28809",
+  "['query']['pages']['28809']['title']",
+  "['query']['pages']['28809']['extract']"
+);
 
+Clicker(shabbatButton, shabbatPage);
 
+//----------------INSTANCE-5------------------------
+const fatherMotherButton = document.querySelector(".btnFatherMother");
+const fatherMotherPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[16]['FatherMother'][0]['fatherMotherText']",
+);
+
+Clicker(fatherMotherButton, fatherMotherPage);
+
+//----------------INSTANCE-6------------------------
+const dontMurderButton = document.querySelector(".btnDontMurder");
+const dontMurderPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[17]['DontMurder'][0]['dontMurderText']",
+  "https://upload.wikimedia.org/wikipedia/commons/5/56/Mediterranean_Sea_East_location_map.svg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=210&pageids=2575978",
+  "['query']['pages']['2575978']['title']",
+  "['query']['pages']['2575978']['extract']"
+);
+
+Clicker(dontMurderButton, dontMurderPage);
+
+//----------------INSTANCE-7------------------------
+const noAdulteryButton = document.querySelector(".btnNoAdultery");
+const noAdulteryPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[20]['NoAdultery'][0]['noAdulteryText']",
+);
+
+Clicker(noAdulteryButton, noAdulteryPage);
+
+//----------------INSTANCE-8------------------------
+const dontStealButton = document.querySelector(".btnDontSteal");
+const dontStealPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[21]['DontSteal'][0]['dontStealText']"
+);
+
+Clicker(dontStealButton, dontStealPage);
+
+//----------------INSTANCE-9------------------------
+const noFalseWitnessButton = document.querySelector(".btnNoFalseWitness");
+const noFalseWitnessPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[27]['NoFalseWitness'][0]['dontFalselyWitnessText']"
+);
+
+Clicker(noFalseWitnessButton, noFalseWitnessPage);
+
+//----------------INSTANCE-10------------------------
+const doNotCovetButton = document.querySelector(".btnDoNotCovet");
+const doNotCovetPage = new GetVersesAndDisplayThem(
+  "displayResults",
+  "[28]['DoNotCovet'][0]['doNotCovetText']"
+);
+
+Clicker(doNotCovetButton, doNotCovetPage);
 
 
 //Primary Buttons Functionality
