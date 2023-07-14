@@ -1,0 +1,104 @@
+.banner {
+  background-image:url(../images/PaleoLev.png);
+  height: 150px;
+  width: 790px;
+}
+
+h1 {
+  position: absolute;
+  top: 150px;
+}
+
+h3 {
+  position: absolute;
+  top: 221px;
+}
+
+.section1, .section2 {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .myDropdown:hover, .myDropdown:focus, .myDropdown2:hover, .myDropdown2:focus {
+    background-color: #2980B9;
+  }
+  
+  .two-main-sections {
+    position: relative;
+    display: inline-block;
+    top: 220px;
+    left: 226px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 105px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a, .dropdown2-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover, .dropdown2-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  .show2 {display:block;}
+
+  .displayResults {
+    position: absolute;
+    top: 420px;
+  }
+
+  .display-API-Image {
+    width: 130px;
+    position: absolute;
+    right: 54px;
+    top: 50px;
+  }
+
+  img {
+    width: 105px;
+  }
+
+  .API-Display-Title {
+    position: absolute;
+    right: 61px;
+    top: 223px;
+    font-size: 26px;
+    color:  red;
+  }
+
+  .API-Display {
+    max-width: 150px;
+    position: absolute;
+    right: 50px;
+    top: 264px;
+  }
