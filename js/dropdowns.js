@@ -135,11 +135,12 @@ const noIdolsPage = new GetVersesAndDisplayThem(
   "[3]['NoIdols'][0]['noIdolsText']",
   "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929",
-  "['query']['pages']['2180929']['title']",
+  "['query']['pages']['2180929']['title']", 
   "['query']['pages']['2180929']['extract']"
 );
 
 Clicker(noIdolsButton, noIdolsPage);
+
 
 //----------------INSTANCE-3------------------------
 const noNameVainButton = document.querySelector(".btnNoNameVain");

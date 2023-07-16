@@ -19,9 +19,14 @@ nextButton.addEventListener('click', () => {
     }
 });
 
+cardsContainer.addEventListener('click', () => {
+    if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        slideToCard(currentIndex);
+    }
+});
+
 function slideToCard(index) {
-    // Slide to the corresponding card
     const cardWidth = cards[0].offsetWidth;
     cardsContainer.style.transform = `translateX(-${cardWidth * index}px)`;
 }
-  
