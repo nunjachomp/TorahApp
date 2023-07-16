@@ -1,9 +1,11 @@
-const dropdownToggle = document.querySelector(".dropdown-toggle");
+const calendarDropdownToggle = document.querySelector(".calendar-button");
+
 const dropdownMenu = document.querySelector(".dropdown-menu");
-const sideButtonToggle = document.querySelector(".side-button");
+
+const doNotWorkToggle = document.querySelector(".do-not-work-button");
 const sideButtonMenu = document.querySelector(".side-menu");
 
-dropdownToggle.addEventListener("click", function () {
+calendarDropdownToggle.addEventListener("click", function () {
   if (dropdownMenu.style.display === "block") {
     dropdownMenu.style.display = "none";
   } else {
@@ -11,7 +13,7 @@ dropdownToggle.addEventListener("click", function () {
   }
 });
 
-sideButtonToggle.addEventListener("click", function () {
+doNotWorkToggle.addEventListener("click", function () {
   if (sideButtonMenu.style.display === "block") {
     sideButtonMenu.style.display = "none";
   } else {
