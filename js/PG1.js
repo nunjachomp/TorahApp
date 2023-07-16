@@ -1,7 +1,7 @@
-var dropdownToggle = document.querySelector(".dropdown-toggle");
-var dropdownMenu = document.querySelector(".dropdown-menu");
-var sideButtonToggle = document.querySelector(".side-button");
-var sideButtonMenu = document.querySelector(".side-menu");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+const sideButtonToggle = document.querySelector(".side-button");
+const sideButtonMenu = document.querySelector(".side-menu");
 
 dropdownToggle.addEventListener("click", function () {
   if (dropdownMenu.style.display === "block") {

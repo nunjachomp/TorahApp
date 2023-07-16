@@ -94,6 +94,7 @@ img {
 
 .card .text {
   font-size: 16px;
+  margin: 1rem 0.2rem 0.2rem 0.2rem;
 }
 
 .card .button-container {
