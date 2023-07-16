@@ -1,59 +1,75 @@
-*{
+* {
   padding: 0;
   margin: 0;
-  border: black 1px;
 }
 
 body {
-    padding: 50px;
-    text-align: center;
-  }
-  .title {
-    font-size: 48px;
-    margin-bottom: 30px;
-  }
-  .btn {
-    font-size: 24px;
-    padding: 10px 30px;
-  }
-  .side-button {
-    margin-left: 10px;
-  }
-  .btn-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  padding: 0px;
+  text-align: none;
+}
 
-  .displayResults {
-    position: absolute;
-    top: 29px;
-    left: -16px;
-  }
+.title {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
 
-  .display-API-Image {
-    width: 130px;
-    position: absolute;
-    right: 54px;
-    top: 187px;
-  }
+.displayResults {
+  position: absolute;
+  top: 29px;
+  left: -16px;
+}
 
-  img {
-    width: 105px;
-  }
+.shabbat-catergory-box {
+  position: absolute;
+  top: 40px;
+}
 
-  .API-Display-Title {
-    position: absolute;
-    right: 50px;
-    top: 128px;
-    font-size: 26px;
-    color:  red;
-  }
 
-  .API-Display {
-    max-width: 150px;
-    position: absolute;
-    right: -95px;
-    top: 181px;
-    text-wrap: balance;
-  }
+img {
+  width: 105px;
+}
+
+.display-API-Image {
+  width: 130px;
+  position: absolute;
+  left: 0px;
+  top: 264px;
+}
+
+.API-Display-Title {
+  position: absolute;
+  left: 0px;
+  top: 350px;
+  font-size: 26px;
+  color: red;
+}
+
+.API-Display {
+  width: 90%;
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  text-wrap: balance;
+}
+
+
+
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-button {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+
+.do-not-work-button {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+
+

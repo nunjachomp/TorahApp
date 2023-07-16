@@ -32,10 +32,8 @@ class GetVersesAndDisplayThem {
   async getAndPostWikiImage() {
     try {
       const response = await fetch(this.photoAPI);
-      const blob = await response.blob();
-      const imageUrl = URL.createObjectURL(blob);
       const imgElement = document.createElement("img");
-      imgElement.src = imageUrl;
+      imgElement.src = response.url;
       document.querySelector(".display-API-Image").appendChild(imgElement);
     } catch (error) {
       console.error(error);
@@ -59,6 +57,7 @@ class GetVersesAndDisplayThem {
     const imageElement = document.querySelector(".display-API-Image img");
     const titleElement = document.querySelector(".API-Display-Title");
     const summaryElement = document.querySelector(".API-Display");
+    const displayElement = document.querySelector(".displayResults");
 
     if (imageElement) {
       imageElement.remove();
@@ -68,6 +67,9 @@ class GetVersesAndDisplayThem {
     }
     if (summaryElement) {
       summaryElement.innerHTML = "";
+    }
+    if (displayElement) {
+      displayElement.innerHTML = "";
     }
   }
 }
