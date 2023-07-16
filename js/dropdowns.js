@@ -57,7 +57,7 @@ class GetVersesAndDisplayThem {
     const imageElement = document.querySelector(".display-API-Image img");
     const titleElement = document.querySelector(".API-Display-Title");
     const summaryElement = document.querySelector(".API-Display");
-    const displayElement = document.querySelector(".displayResults");
+    const displayElement = document.querySelector(`.${this.containerId}`);
 
     if (imageElement) {
       imageElement.remove();
@@ -165,6 +165,97 @@ const shabbatPage = new GetVersesAndDisplayThem(
 );
 
 Clicker(shabbatButton, shabbatPage);
+
+//----------------INSTANCE-4.1------------------------
+const pesachButton = document.querySelector(".btnPesach");
+const pesachPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  //"headingShabbat",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(pesachButton, pesachPage);
+
+//----------------INSTANCE-4.2------------------------
+const matzotButton = document.querySelector(".btnMatzot");
+const matzotPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(matzotButton, matzotPage);
+
+//----------------INSTANCE-4.3------------------------
+const bikurimButton = document.querySelector(".btnBikurim");
+const bikurimPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(bikurimButton, bikurimPage);
+
+//----------------INSTANCE-4.4------------------------
+const shavuotButton = document.querySelector(".btnShavuot");
+const shavuotPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(shavuotButton, shavuotPage);
+
+//----------------INSTANCE-4.5------------------------
+const yomtruahButton = document.querySelector(".btnYomTruah");
+const yomtruahPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(yomtruahButton, yomtruahPage);
+
+//----------------INSTANCE-4.6------------------------
+const yomKippurButton = document.querySelector(".btnYomKippur");
+const yomKippurPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(yomKippurButton, yomKippurPage);
+
+//----------------INSTANCE-4.7------------------------
+const sukkotButton = document.querySelector(".btnSukkot");
+const sukkotPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(sukkotButton, sukkotPage);
+
+//----------------INSTANCE-4.7-T1------------------------
+const TESTButton = document.querySelector(".TEST1");
+const TESTPage = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(TESTButton, TESTPage);
+
+//----------------INSTANCE-4.7-T2------------------------
+const TEST2Button = document.querySelector(".TEST2");
+const TEST2Page = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(TEST2Button, TEST2Page);
+
+//----------------INSTANCE-4.7-T3------------------------
+const TEST3Button = document.querySelector(".TEST3");
+const TEST3Page = new GetVersesAndDisplayThem(
+  "miscResults",
+  "[5]['Shabbat'][0]['shabbatText']",
+);
+
+Clicker(TEST3Button, TEST3Page);
 
 //----------------INSTANCE-5------------------------
 const fatherMotherButton = document.querySelector(".btnFatherMother");

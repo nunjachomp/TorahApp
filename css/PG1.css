@@ -15,11 +15,11 @@ body {
 
 .displayResults {
   position: absolute;
-  top: 29px;
-  left: -16px;
+  top: 240px;
+  left: 208px;
 }
 
-.shabbat-catergory-box {
+.shabbat-category-box {
   position: absolute;
   top: 40px;
 }
@@ -52,6 +52,11 @@ img {
   text-wrap: balance;
 }
 
+.miscResults {
+  position: absolute;
+  top: 240px;
+  left: 208px;
+}
 
 
 
@@ -71,5 +76,13 @@ img {
   font-size: 24px;
   padding: 10px 30px;
 }
+ .dropdown-menu, .side-menu {
+  display: none;
+ }
 
+ .side-menu {
+  position: absolute;
+  top: 100%;
+  left: 240px;
+ }
 

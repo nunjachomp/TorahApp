@@ -1,9 +1,5 @@
 const calendarDropdownToggle = document.querySelector(".calendar-button");
-
 const dropdownMenu = document.querySelector(".dropdown-menu");
-
-const doNotWorkToggle = document.querySelector(".do-not-work-button");
-const sideButtonMenu = document.querySelector(".side-menu");
 
 calendarDropdownToggle.addEventListener("click", function () {
   if (dropdownMenu.style.display === "block") {
@@ -13,7 +9,11 @@ calendarDropdownToggle.addEventListener("click", function () {
   }
 });
 
-doNotWorkToggle.addEventListener("click", function () {
+
+const doNotWorkDropdownToggle = document.querySelector(".do-not-work-button");
+const sideButtonMenu = document.querySelector(".side-menu");
+
+doNotWorkDropdownToggle.addEventListener("click", function () {
   if (sideButtonMenu.style.display === "block") {
     sideButtonMenu.style.display = "none";
   } else {
@@ -21,5 +21,6 @@ doNotWorkToggle.addEventListener("click", function () {
   }
 });
 //PG2---------------------------
+
 
 
