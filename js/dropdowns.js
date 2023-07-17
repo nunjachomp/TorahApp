@@ -158,7 +158,7 @@ Clicker(noNameVainButton, noNameVainPage);
 //----------------INSTANCE-4------------------------
 const shabbatButton = document.querySelector(".btnShabbat");
 const shabbatPage = new GetVersesAndDisplayThem(
-  "a",
+  null,
   "",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shabbat_Candles.jpg/300px-Shabbat_Candles.jpg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=600&pageids=28809",
@@ -168,11 +168,20 @@ const shabbatPage = new GetVersesAndDisplayThem(
 
 Clicker(shabbatButton, shabbatPage);
 
+//----------------INSTANCE-4.0------------------------
+const roshHaShanahButton = document.querySelector(".btnRoshHaShanah");
+const roshHaShanahPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[6]['Shabbat-Calendar'][0]['calendarText']",
+);
+
+Clicker(roshHaShanahButton, roshHaShanahPage);
+
 //----------------INSTANCE-4.1------------------------
 const pesachButton = document.querySelector(".btnPesach");
 const pesachPage = new GetVersesAndDisplayThem(
   "headingShabbat",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "[9]['Shabbat-Holydays-Pesach'][0]['pesachText']",
 );
 
 Clicker(pesachButton, pesachPage);
@@ -180,8 +189,8 @@ Clicker(pesachButton, pesachPage);
 //----------------INSTANCE-4.2------------------------
 const matzotButton = document.querySelector(".btnMatzot");
 const matzotPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "headingShabbat",
+  "[10]['Shabbat-Holydays-Matzot'][0]['matzotText']",
 );
 
 Clicker(matzotButton, matzotPage);
@@ -189,8 +198,8 @@ Clicker(matzotButton, matzotPage);
 //----------------INSTANCE-4.3------------------------
 const bikurimButton = document.querySelector(".btnBikurim");
 const bikurimPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "headingShabbat",
+  "[11]['Shabbat-Holydays-BikurimHarvest'][0]['bikurimHarvestText']",
 );
 
 Clicker(bikurimButton, bikurimPage);
@@ -198,8 +207,8 @@ Clicker(bikurimButton, bikurimPage);
 //----------------INSTANCE-4.4------------------------
 const shavuotButton = document.querySelector(".btnShavuot");
 const shavuotPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "headingShabbat",
+  "[12]['Shabbat-Holydays-Shavuot'][0]['shavuotText']",
 );
 
 Clicker(shavuotButton, shavuotPage);
@@ -207,8 +216,8 @@ Clicker(shavuotButton, shavuotPage);
 //----------------INSTANCE-4.5------------------------
 const yomtruahButton = document.querySelector(".btnYomTruah");
 const yomtruahPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "headingShabbat",
+  "[13]['Shabbat-Holydays-YomTruah'][0]['yomTruahText']",
 );
 
 Clicker(yomtruahButton, yomtruahPage);
@@ -216,8 +225,8 @@ Clicker(yomtruahButton, yomtruahPage);
 //----------------INSTANCE-4.6------------------------
 const yomKippurButton = document.querySelector(".btnYomKippur");
 const yomKippurPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "headingShabbat",
+  "[14]['Shabbat-Holydays-YomKippur'][0]['yomKippurText']",
 );
 
 Clicker(yomKippurButton, yomKippurPage);
@@ -225,8 +234,8 @@ Clicker(yomKippurButton, yomKippurPage);
 //----------------INSTANCE-4.7------------------------
 const sukkotButton = document.querySelector(".btnSukkot");
 const sukkotPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "headingShabbat",
+  "[15]['Shabbat-Holydays-Sukkot'][0]['sukkotText']",
 );
 
 Clicker(sukkotButton, sukkotPage);

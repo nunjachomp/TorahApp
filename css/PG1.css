@@ -99,6 +99,7 @@ nav span {
 .headingShabbat {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 1rem;
   border: 1px solid rgb(14, 165, 39);
 }
