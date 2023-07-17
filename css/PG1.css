@@ -80,7 +80,12 @@ img {
   display: none;
  }
 
-<<<<<<< HEAD
+ .side-menu {
+  position: absolute;
+  top: 100%;
+  left: 240px;
+ }
+
 nav {
   border-top: 3px solid #222120;
   border-bottom: 3px solid #222120;
@@ -148,11 +153,4 @@ nav span {
   font-weight: 900;
   text-shadow: -1px 0 #b6ab8f, 0 1px #b6ab8f, 1px 0 #b6ab8f, 0 -1px #b6ab8f;
 }
-=======
- .side-menu {
-  position: absolute;
-  top: 100%;
-  left: 240px;
- }
->>>>>>> ca2753b4f5d181aa2a1bf2d6f42f4da8c0ab584e
 

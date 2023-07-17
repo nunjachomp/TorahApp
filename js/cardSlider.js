@@ -10,7 +10,7 @@ let currentIndex = 0;
 //         currentIndex--;
 //         slideToCard(currentIndex);
 //     }
-});
+// });
 
 // nextButton.addEventListener('click', () => {
 //     if (currentIndex < cards.length - 1) {
