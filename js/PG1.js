@@ -20,6 +20,11 @@ doNotWorkToggle.addEventListener("click", function () {
     sideButtonMenu.style.display = "block";
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var subMenuItems = document.querySelector('.sub-menu-items');
+  subMenuItems.style.display = 'none';
+});
 //PG2---------------------------
 
 

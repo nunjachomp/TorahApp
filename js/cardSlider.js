@@ -24,7 +24,8 @@ cardsContainer.addEventListener('click', () => {
         currentIndex++;
         slideToCard(currentIndex);
     }
-});
+})
+
 
 function slideToCard(index) {
     const cardWidth = cards[0].offsetWidth;
