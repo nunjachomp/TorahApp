@@ -8,9 +8,87 @@ body {
   text-align: none;
 }
 
+/* Nav Bar */
+nav {
+  border-top: 3px solid #222120;
+  border-bottom: 3px solid #222120;
+  border-width: 0.2rem;
+  position: fixed;
+  z-index: 10;
+  top: 0.2rem;
+  width: 100%;
+  background-color:#1b86de;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: flex;
+  padding-inline: 3rem;
+  text-decoration: none;
+  color:  #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.sub-menu-items {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-menu:hover .sub-menu-items {
+  display: block;
+}
+
+.sub-menu-items li {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sub-menu-items a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-menu-items a:hover {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: #a1270b;
+}
+
+nav span {
+  color: #eccd98;
+  font-weight: 900;
+  text-shadow: -1px 0 #b6ab8f, 0 1px #b6ab8f, 1px 0 #b6ab8f, 0 -1px #b6ab8f;
+}
+/*-------*/
+
+.top-of-page {
+  margin-top: 8rem;
+}
+
 .title {
   font-size: 48px;
   margin-bottom: 30px;
+}
+
+.headingShabbat {
+/* empty ruleset */
 }
 
 .displayResults {
@@ -86,71 +164,5 @@ img {
   left: 240px;
  }
 
-nav {
-  border-top: 3px solid #222120;
-  border-bottom: 3px solid #222120;
-  border-width: 0.2rem;
-  position: fixed;
-  z-index: 10;
-  top: 0.2rem;
-  width: 100%;
-  background-color:#1b86de;
-}
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  display: flex;
-  padding-inline: 3rem;
-  text-decoration: none;
-  color:  #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.sub-menu-items {
-  display: none;
-  position: absolute;
-  top: 70%;
-  left: 45%;
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.sub-menu:hover .sub-menu-items {
-  display: block;
-}
-
-.sub-menu-items li {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.sub-menu-items a {
-  display: block;
-  color: #333;
-  text-decoration: none;
-}
-
-.sub-menu-items a:hover {
-  text-decoration: underline;
-}
-
-nav a:hover {
-  color: #a1270b;
-}
-
-nav span {
-  color: #eccd98;
-  font-weight: 900;
-  text-shadow: -1px 0 #b6ab8f, 0 1px #b6ab8f, 1px 0 #b6ab8f, 0 -1px #b6ab8f;
-}
 
