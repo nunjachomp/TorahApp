@@ -169,7 +169,7 @@ Clicker(shabbatButton, shabbatPage);
 //----------------INSTANCE-4.1------------------------
 const pesachButton = document.querySelector(".btnPesach");
 const pesachPage = new GetVersesAndDisplayThem(
-  "miscResults",
+  "headingShabbat",
   //"headingShabbat",
   "[5]['Shabbat'][0]['shabbatText']",
 );
