@@ -241,31 +241,31 @@ const sukkotPage = new GetVersesAndDisplayThem(
 Clicker(sukkotButton, sukkotPage);
 
 //----------------INSTANCE-4.7-T1------------------------
-const TESTButton = document.querySelector(".TEST1");
-const TESTPage = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+const noOthersWorkButton = document.querySelector(".btnNoOthersWork");
+const noOthersWorkPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[5]['Shabbat'][2]['shabbatText']",
 );
 
-Clicker(TESTButton, TESTPage);
+Clicker(noOthersWorkButton, noOthersWorkPage);
 
 //----------------INSTANCE-4.7-T2------------------------
-const TEST2Button = document.querySelector(".TEST2");
-const TEST2Page = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+const noCookingButton = document.querySelector(".btnNoCooking");
+const noCookingPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[5]['Shabbat'][4]['shabbatText']",
 );
 
-Clicker(TEST2Button, TEST2Page);
+Clicker(noCookingButton, noCookingPage);
 
 //----------------INSTANCE-4.7-T3------------------------
-const TEST3Button = document.querySelector(".TEST3");
-const TEST3Page = new GetVersesAndDisplayThem(
-  "miscResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+const noFireButton = document.querySelector(".btnNoFire");
+const noFirePage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[5]['Shabbat'][6]['shabbatText']",
 );
 
-Clicker(TEST3Button, TEST3Page);
+Clicker(noFireButton, noFirePage);
 
 //----------------INSTANCE-5------------------------
 const fatherMotherButton = document.querySelector(".btnFatherMother");
