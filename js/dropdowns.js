@@ -34,7 +34,9 @@ class GetVersesAndDisplayThem {
       const response = await fetch(this.photoAPI);
       const imgElement = document.createElement("img");
       imgElement.src = response.url;
+      if (this.photoAPI) {
       document.querySelector(".display-API-Image").appendChild(imgElement);
+      }
     } catch (error) {
       console.error(error);
     }
@@ -156,8 +158,8 @@ Clicker(noNameVainButton, noNameVainPage);
 //----------------INSTANCE-4------------------------
 const shabbatButton = document.querySelector(".btnShabbat");
 const shabbatPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[5]['Shabbat'][0]['shabbatText']",
+  "a",
+  "",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shabbat_Candles.jpg/300px-Shabbat_Candles.jpg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=600&pageids=28809",
   "['query']['pages']['28809']['title']",
@@ -170,7 +172,6 @@ Clicker(shabbatButton, shabbatPage);
 const pesachButton = document.querySelector(".btnPesach");
 const pesachPage = new GetVersesAndDisplayThem(
   "headingShabbat",
-  //"headingShabbat",
   "[5]['Shabbat'][0]['shabbatText']",
 );
 

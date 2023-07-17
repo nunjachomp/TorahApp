@@ -107,6 +107,7 @@ nav span {
   display: flex;
   position: absolute;
   top: 105%;
+  left: 0%;
   width: 100%;
   border: 1px solid red;
   justify-content: center;
