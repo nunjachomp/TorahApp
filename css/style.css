@@ -17,7 +17,7 @@ body {
   background-image: url("/images/Panorama-of-Jerusalem.jpg");
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
 }
 
 .torah-section {

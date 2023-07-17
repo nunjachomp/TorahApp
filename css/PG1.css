@@ -154,3 +154,14 @@ nav span {
   text-shadow: -1px 0 #b6ab8f, 0 1px #b6ab8f, 1px 0 #b6ab8f, 0 -1px #b6ab8f;
 }
 
+.card9{
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background-color:#fff;
+  padding: 10px;
+  border:black 1px solid;
+}

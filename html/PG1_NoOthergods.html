@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h1 class="title">You have no other gods before Me</h1>
-          <div class="headingScripture">"I am יהוה your Elohim, who brought you out of the land of Mitsrayim, out of the house of slavery."</div>
+          <div class="headingScripture">"I am יהוה your Elohim, who brought you out of the land of Mitsrayim, out of the <span class="hoverable-word">home</span> of slavery."</div>
           <div class="btn-group">
             <button
               onclick="myFunction()" 
@@ -55,10 +55,27 @@
           </div>
         </div>
       </div>
+    </div>  
+    <div class="card9" id="card9">
+      <div class="card-content9">
+        <h2 id="displayApiTitle"></h2>
+        <p id="displayAPI"></p>
+      </div>
     </div>
+
+     <div class="city">
+    <iframe id="map" 
+        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+          <div class="btn">
+         <button disabled id="prev" class="btn prev">Prev</button>
+         <button id="next" class="btn next">Next</button>
+        </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/PG1.js"></script>
     <script src="../js/dropdowns.js"></script>
+    <script src="../js/hover.js"></script>
+    <script src="../maps.js"></script>
   </body>
 </html>

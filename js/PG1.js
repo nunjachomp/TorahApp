@@ -27,5 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //PG2---------------------------
 
+function showCard() {
+  const card = document.getElementById('card9');
+  card.style.display = 'block';
+}
+
+function hideCard() {
+  const card = document.getElementById('card9');
+  card.style.display = 'none';
+}
 
 

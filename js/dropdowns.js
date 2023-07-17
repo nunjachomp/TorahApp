@@ -1,4 +1,4 @@
-class GetVersesAndDisplayThem {
+ class GetVersesAndDisplayThem {
   constructor(containerId, address, photoAPI, wikiAPI, wikiTitle, wikiSummary) {
     this.containerId = containerId;
     this.address = address;
@@ -40,7 +40,7 @@ class GetVersesAndDisplayThem {
     }
   }
 
-  async getWikiTitleAndSummary() {
+   async getWikiTitleAndSummary() {
     try {
       let response = await fetch(this.wikiAPI);
       let data = await response.json();
