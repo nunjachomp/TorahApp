@@ -78,6 +78,10 @@ nav span {
 }
 /*-------*/
 
+.container {
+  position: relative;
+}
+
 .top-of-page {
   margin-top: 8rem;
 }
@@ -91,16 +95,51 @@ nav span {
 /* empty ruleset */
 }
 
+.btn-group {
+  display: flex;
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  border: 1px solid red;
+  justify-content: center;
+}
+
+.btnShabbat {
+  display: flex;
+  position: absolute;
+}
+
+.shabbat-category-box{
+  display: flex;
+  position: relative;
+  top: 40px;
+}
+
+.calendar-button {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+
+.do-not-work-button {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+ .dropdown-menu, .side-menu {
+  display: none;
+ }
+
+ .side-menu {
+  position: absolute;
+  top: 100%;
+  left: 240px;
+ }
+
 .displayResults {
   position: absolute;
   top: 240px;
   left: 208px;
 }
 
-.shabbat-category-box {
-  position: absolute;
-  top: 40px;
-}
 
 
 img {
@@ -138,31 +177,7 @@ img {
 
 
 
-.btn-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 
-.calendar-button {
-  font-size: 24px;
-  padding: 10px 30px;
-}
-
-.do-not-work-button {
-  font-size: 24px;
-  padding: 10px 30px;
-}
- .dropdown-menu, .side-menu {
-  display: none;
- }
-
- .side-menu {
-  position: absolute;
-  top: 100%;
-  left: 240px;
- }
 
 
 
