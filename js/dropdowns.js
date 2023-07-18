@@ -213,6 +213,10 @@ const shavuotButton = document.querySelector(".btnShavuot");
 const shavuotPage = new GetVersesAndDisplayThem(
   "headingShabbat",
   "[12]['Shabbat-Holydays-Shavuot'][0]['shavuotText']",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Moritz_Daniel_Oppenheim_-_Shavuot_%28Pentecost%29_%28Das_Wochen-_oder_Pfingst-Fest%29_-_Google_Art_Project.jpg/300px-Moritz_Daniel_Oppenheim_-_Shavuot_%28Pentecost%29_%28Das_Wochen-_oder_Pfingst-Fest%29_-_Google_Art_Project.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=565&pageids=228264",
+  "['query']['pages']['228264']['title']", 
+  "['query']['pages']['228264']['extract']"
 );
 
 Clicker(shavuotButton, shavuotPage);
@@ -222,6 +226,10 @@ const yomtruahButton = document.querySelector(".btnYomTruah");
 const yomtruahPage = new GetVersesAndDisplayThem(
   "headingShabbat",
   "[13]['Shabbat-Holydays-YomTruah'][0]['yomTruahText']",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Rosh_Hashana.jpeg/200px-Rosh_Hashana.jpeg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=615&pageids=19596764",
+  "['query']['pages']['19596764']['title']", 
+  "['query']['pages']['19596764']['extract']"
 );
 
 Clicker(yomtruahButton, yomtruahPage);
@@ -231,6 +239,10 @@ const yomKippurButton = document.querySelector(".btnYomKippur");
 const yomKippurPage = new GetVersesAndDisplayThem(
   "headingShabbat",
   "[14]['Shabbat-Holydays-YomKippur'][0]['yomKippurText']",
+  "https://upload.wikimedia.org/wikipedia/commons/1/1e/Maurycy_Gottlieb_-_Jews_Praying_in_the_Synagogue_on_Yom_Kippur.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=440&pageids=34382",
+  "['query']['pages']['34382']['title']", 
+  "['query']['pages']['34382']['extract']"
 );
 
 Clicker(yomKippurButton, yomKippurPage);
@@ -240,6 +252,10 @@ const sukkotButton = document.querySelector(".btnSukkot");
 const sukkotPage = new GetVersesAndDisplayThem(
   "headingShabbat",
   "[15]['Shabbat-Holydays-Sukkot'][0]['sukkotText']",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sukkoth_-_IZE10160.jpg/300px-Sukkoth_-_IZE10160.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=467&pageids=28622",
+  "['query']['pages']['28622']['title']", 
+  "['query']['pages']['28622']['extract']"
 );
 
 Clicker(sukkotButton, sukkotPage);
@@ -365,11 +381,38 @@ const landBoundariesPage = new GetVersesAndDisplayThem(
 
 Clicker(landBoundariesButton, landBoundariesPage);
 
+//----------------INSTANCE-8.3------------------------
+const yearOfReleaseButton = document.querySelector(".btnYearOfRelease");
+const yearOfReleasePage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[24]['DontSteal-YearOfRelease'][0]['yearOfReleaseText']"
+);
+
+Clicker(yearOfReleaseButton, yearOfReleasePage);
+
+//----------------INSTANCE-8.4------------------------
+const yovelButton = document.querySelector(".btnYovel");
+const yovelPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[25]['DontSteal-Yovelim'][0]['yovelText']"
+);
+
+Clicker(yovelButton, yovelPage);
+
+//----------------INSTANCE-8.5------------------------
+const landLeasesButton = document.querySelector(".btnLandLeases");
+const landLeasesPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[26]['DontSteal-LandLeases'][0]['landLeaseText']"
+);
+
+Clicker(landLeasesButton, landLeasesPage);
+
 //----------------INSTANCE-9------------------------
 const noFalseWitnessButton = document.querySelector(".btnNoFalseWitness");
 const noFalseWitnessPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[27]['NoFalseWitness'][0]['dontFalselyWitnessText']"
+  "headingShabbat",
+  "[27]['NoFalseWitness'][1]['dontFalselyWitnessText']"
 );
 
 Clicker(noFalseWitnessButton, noFalseWitnessPage);

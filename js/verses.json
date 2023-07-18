@@ -138,15 +138,7 @@
     
     {"NoFalseWitness": [
     {"chapter":20,"verse":16,"dontFalselyWitnessText":"You do not bear false witness against your neighbour.","book_name":"Exodus"},
-    {"chapter":23,"verse":1,"dontFalselyWitnessText":"Do not bring a false report. Do not put your hand with the wrong to be a malicious witness.","book_name":"Exodus"},
-    {"chapter":23,"verse":7,"dontFalselyWitnessText":"Keep yourself far from a false matter, and do not kill the innocent and the righteous, for I do not declare the wrong right.","book_name":"Exodus"},
-    {"chapter":23,"verse":8,"dontFalselyWitnessText":"And do not take a bribe, for a bribe blinds the seeing one and twists the words of the righteous.","book_name":"Exodus"},
-    {"chapter":5,"verse":1,"dontFalselyWitnessText":"And when a person sins in that he has heard the voice of swearing, and is a witness, or has seen, or has known, but does not reveal it, he shall bear his crookedness.","book_name":"Leviticus"},
-    {"chapter":19,"verse":15,"dontFalselyWitnessText":"One witness does not rise up against a man concerning any crookedness or any sin that he commits. At the mouth of two witnesses or at the mouth of three witnesses a matter is established.","book_name":"Deuteronomy"},
-    {"chapter":19,"verse":16,"dontFalselyWitnessText":"When a malicious witness rises up against any man to accuse him of turning aside,","book_name":"Deuteronomy"},
-    {"chapter":19,"verse":17,"dontFalselyWitnessText":"then both men who have the dispute shall stand before יהוה, before the priests and the judges who serve in those days.","book_name":"Deuteronomy"},
-    {"chapter":19,"verse":18,"dontFalselyWitnessText":"And the judges shall diligently search and see if the witness is a false witness, who has falsely accused his brother,","book_name":"Deuteronomy"},
-    {"chapter":19,"verse":19,"dontFalselyWitnessText":"then you shall do to him as he thought to have done to his brother. Thus you shall purge the evil from your midst.","book_name":"Deuteronomy"}
+    {"chapter":23,"verse":1,"dontFalselyWitnessText":"Do not bring a false report. Do not put your hand with the wrong to be a malicious witness. Keep yourself far from a false matter, and do not kill the innocent and the righteous, for I do not declare the wrong right. And do not take a bribe, for a bribe blinds the seeing one and twists the words of the righteous. And when a person sins in that he has heard the voice of swearing, and is a witness, or has seen, or has known, but does not reveal it, he shall bear his crookedness. One witness does not rise up against a man concerning any crookedness or any sin that he commits. At the mouth of two witnesses or at the mouth of three witnesses a matter is established. When a malicious witness rises up against any man to accuse him of turning aside, then both men who have the dispute shall stand before יהוה, before the priests and the judges who serve in those days. And the judges shall diligently search and see if the witness is a false witness, who has falsely accused his brother, then you shall do to him as he thought to have done to his brother. Thus you shall purge the evil from your midst.","book_name":"Deuteronomy"}
     ]},
     
     {"DoNotCovet": [

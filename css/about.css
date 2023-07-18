@@ -1,0 +1,33 @@
+body {
+  background-image: url("/images/flag.png");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+align-items: center;
+min-height: 100vh;
+  text-align: center;
+}
+header {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+  color: goldenrod;
+}
+p {
+  color: black;
+  text-shadow:  2px 2px 4px rgba(11, 65, 90, 0.7);
+  line-height: 1.5;
+}
+h2:not(:first-child),
+p:not(:first-child) {
+  margin-top: 20px;
+}
