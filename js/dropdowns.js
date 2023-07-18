@@ -182,6 +182,10 @@ const pesachButton = document.querySelector(".btnPesach");
 const pesachPage = new GetVersesAndDisplayThem(
   "headingShabbat",
   "[9]['Shabbat-Holydays-Pesach'][0]['pesachText']",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pessach_Pesach_Pascha_Judentum_Ungesaeuert_Seder_datafox.jpg/200px-Pessach_Pesach_Pascha_Judentum_Ungesaeuert_Seder_datafox.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=350&pageids=23059",
+  "['query']['pages']['23059']['title']", 
+  "['query']['pages']['23059']['extract']"
 );
 
 Clicker(pesachButton, pesachPage);
@@ -328,8 +332,8 @@ Clicker(warfareButton, warfarePage);
 //----------------INSTANCE-7------------------------
 const noAdulteryButton = document.querySelector(".btnNoAdultery");
 const noAdulteryPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[20]['NoAdultery'][0]['noAdulteryText']",
+  "headingShabbat",
+  "[20]['NoAdultery'][1]['noAdulteryText']",
 );
 
 Clicker(noAdulteryButton, noAdulteryPage);
@@ -337,11 +341,29 @@ Clicker(noAdulteryButton, noAdulteryPage);
 //----------------INSTANCE-8------------------------
 const dontStealButton = document.querySelector(".btnDontSteal");
 const dontStealPage = new GetVersesAndDisplayThem(
-  "displayResults",
+  "headingShabbat",
   "[21]['DontSteal'][0]['dontStealText']"
 );
 
 Clicker(dontStealButton, dontStealPage);
+
+//----------------INSTANCE-8.1------------------------
+const shmitaButton = document.querySelector(".btnShmitah");
+const shmitaPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[22]['DontSteal-PropertyRules-Shmitah'][0]['shmitahText']"
+);
+
+Clicker(shmitaButton, shmitaPage);
+
+//----------------INSTANCE-8.2------------------------
+const landBoundariesButton = document.querySelector(".btnLandBoundaries");
+const landBoundariesPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[23]['DontSteal-LandBoundaries'][0]['boundaryStoneText']"
+);
+
+Clicker(landBoundariesButton, landBoundariesPage);
 
 //----------------INSTANCE-9------------------------
 const noFalseWitnessButton = document.querySelector(".btnNoFalseWitness");

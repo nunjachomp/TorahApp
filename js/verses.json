@@ -113,21 +113,11 @@
     
     {"DontSteal": [
     {"chapter":20,"verse":15,"dontStealText":"You do not steal.","book_name":"Exodus"},
-    {"chapter":19,"verse":11,"dontStealText":"Do not steal, do not lie, do not deceive one another.","book_name":"Leviticus"},
-    {"chapter":19,"verse":13,"dontStealText":"Do not oppress your neighbour or rob him. The wages of him who is hired is not to remain with you all night until morning.","book_name":"Leviticus"},
-    {"chapter":23,"verse":19,"dontStealText":"Do not lend at interest to your brother, interest of silver, interest of food, or interest of whatever is lent at interest.","book_name":"Deuteronomy"},
-    {"chapter":23,"verse":24,"dontStealText":"When you come into your neighbour’s vineyard, you shall eat to the satisfaction of your desire, but do not put any in a receptacle of yours.","book_name":"Deuteronomy"},
-    {"chapter":23,"verse":25,"dontStealText":"When you come into your neighbour’s standing grain, you shall pluck the heads with your hand, but do not use a sickle on your neighbour’s standing grain.","book_name":"Deuteronomy"}
+    {"chapter":19,"verse":11,"dontStealText":"Do not steal, do not lie, do not deceive one another. Do not oppress your neighbour or rob him. The wages of him who is hired is not to remain with you all night until morning. Do not lend at interest to your brother, interest of silver, interest of food, or interest of whatever is lent at interest. When you come into your neighbour’s vineyard, you shall eat to the satisfaction of your desire, but do not put any in a receptacle of yours. When you come into your neighbour’s standing grain, you shall pluck the heads with your hand, but do not use a sickle on your neighbour’s standing grain.","book_name":"Deuteronomy"}
     ]},
     
     {"DontSteal-PropertyRules-Shmitah": [
-    {"chapter":23,"verse":10,"shmitahText":"And for six years you are to sow your land, and shall gather its increase,","book_name":"Exodus"},
-    {"chapter":23,"verse":11,"shmitahText":"but the seventh year you are to let it rest, and shall leave it, and the poor of your people shall eat. And what they leave, the beasts of the field eat. Do the same with your vineyard and your oliveyard.","book_name":"Exodus"},
-    {"chapter":25,"verse":3,"shmitahText":"Six years you sow your field, and six years you prune your vineyard, and gather in its fruit,","book_name":"Leviticus"},
-    {"chapter":25,"verse":4,"shmitahText":"but in the seventh year the land is to have a Sabbath of rest, a Sabbath to יהוה. Do not sow your field and do not prune your vineyard.","book_name":"Leviticus"},
-    {"chapter":25,"verse":5,"shmitahText":"Do not reap what grows of its own of your harvest, and do not gather the grapes of your unpruned vine, for it is a year of rest for the land.","book_name":"Leviticus"},
-    {"chapter":25,"verse":6,"shmitahText":"And the Sabbath of the land shall be to you for food, for you and your servant, and for your female servant and your hired servant, and for the stranger who sojourns with you,","book_name":"Leviticus"},
-    {"chapter":25,"verse":7,"shmitahText":"and for your livestock and the beasts that are in your land. All its crops are for food.","book_name":"Leviticus"}
+    {"chapter":23,"verse":10,"shmitahText":"And for six years you are to sow your land, and shall gather its increase, but the seventh year you are to let it rest, and shall leave it, and the poor of your people shall eat. And what they leave, the beasts of the field eat. Do the same with your vineyard and your oliveyard. Six years you sow your field, and six years you prune your vineyard, and gather in its fruit, but in the seventh year the land is to have a Sabbath of rest, a Sabbath to יהוה. Do not sow your field and do not prune your vineyard. Do not reap what grows of its own of your harvest, and do not gather the grapes of your unpruned vine, for it is a year of rest for the land. And the Sabbath of the land shall be to you for food, for you and your servant, and for your female servant and your hired servant, and for the stranger who sojourns with you, and for your livestock and the beasts that are in your land. All its crops are for food.","book_name":"Leviticus"}
     ]},
     
     {"DontSteal-LandBoundaries": [
@@ -135,26 +125,15 @@
     ]},
     
     {"DontSteal-YearOfRelease": [
-    {"chapter":15,"verse":1,"yearOfReleaseText":"At the end of every seven years you make a release of debts.","book_name":"Deuteronomy"},
-    {"chapter":15,"verse":2,"yearOfReleaseText":"And this is the word of the release: Every creditor is to release what he has loaned to his neighbour, he does not require it of his neighbour or his brother, because it is called the release of יהוה.","book_name":"Deuteronomy"},
-    {"chapter":31,"verse":10,"yearOfReleaseText":"And Mosheh commanded them, saying, “At the end of seven years, at the appointed time, the year of release, at the Festival of Sukkot","book_name":"Deuteronomy"}
+    {"chapter":15,"verse":1,"yearOfReleaseText":"At the end of every seven years you make a release of debts. And this is the word of the release: Every creditor is to release what he has loaned to his neighbour, he does not require it of his neighbour or his brother, because it is called the release of יהוה. And Mosheh commanded them, saying, “At the end of seven years, at the appointed time, the year of release, at the Festival of Sukkot","book_name":"Deuteronomy"}
     ]},
     
     {"DontSteal-Yovelim": [
-    {"chapter":25,"verse":8,"yovelText":"And you shall count seven Sabbaths of years for yourself, seven times seven years. And the time of the seven Sabbaths of years shall be to you forty-nine years.","book_name":"Leviticus"},
-    {"chapter":25,"verse":9,"yovelText":"You shall then sound a shofar on the tenth day of the seventh month, on Yom haKippurim cause a shofar to sound through all your land.","book_name":"Leviticus"},
-    {"chapter":25,"verse":10,"yovelText":"And you shall set the fiftieth year apart, and proclaim release throughout all the land to all its inhabitants, it is a Yoḇel for you. And each of you shall return to his possession, and each of you return to his clan.","book_name":"Leviticus"},
-    {"chapter":25,"verse":11,"yovelText":"The fiftieth year is a Yoḇel to you. Do not sow, nor reap what grows of its own, nor gather from its unpruned vine.","book_name":"Leviticus"},
-    {"chapter":25,"verse":12,"yovelText":"It is a Yoḇel, it is set-apart to you. Eat from the field its crops.","book_name":"Leviticus"},
-    {"chapter":25,"verse":13,"yovelText":"In the Year of this Yoḇel let each one of you return to his possession.","book_name":"Leviticus"}
+    {"chapter":25,"verse":8,"yovelText":"And you shall count seven Sabbaths of years for yourself, seven times seven years. And the time of the seven Sabbaths of years shall be to you forty-nine years. You shall then sound a shofar on the tenth day of the seventh month, on Yom haKippurim cause a shofar to sound through all your land. And you shall set the fiftieth year apart, and proclaim release throughout all the land to all its inhabitants, it is a Yoḇel for you. And each of you shall return to his possession, and each of you return to his clan. The fiftieth year is a Yoḇel to you. Do not sow, nor reap what grows of its own, nor gather from its unpruned vine. It is a Yoḇel, it is set-apart to you. Eat from the field its crops. In the Year of this Yoḇel let each one of you return to his possession.","book_name":"Leviticus"}
     ]},
     
     {"DontSteal-LandLeases": [
-    {"chapter":25,"verse":14,"landLeaseText":"And when you sell whatever to your neighbour or buy from the hand of your neighbour, do not exploit one another.","book_name":"Leviticus"},
-    {"chapter":25,"verse":15,"landLeaseText":"According to the number of years after the Yoḇel you buy from your neighbour, and according to the number of years of crops he sells to you.","book_name":"Leviticus"},
-    {"chapter":25,"verse":16,"landLeaseText":"According to the greater number of years you increase its price, and according to the fewer number of years you diminish its price, because he sells to you according to the number of the years of the crops.","book_name":"Leviticus"},
-    {"chapter":25,"verse":17,"landLeaseText":"And do not oppress one another, but you shall fear your Elohim. For I am יהוה your Elohim.","book_name":"Leviticus"},
-    {"chapter":27,"verse":24,"landLeaseText":"‘In the Year of Yoḇel the field returns to him from whom he bought it, to him whose is the possession of the land.","book_name":"Leviticus"}
+    {"chapter":25,"verse":14,"landLeaseText":"And when you sell whatever to your neighbour or buy from the hand of your neighbour, do not exploit one another. According to the number of years after the Yoḇel you buy from your neighbour, and according to the number of years of crops he sells to you. According to the greater number of years you increase its price, and according to the fewer number of years you diminish its price, because he sells to you according to the number of the years of the crops. And do not oppress one another, but you shall fear your Elohim. For I am יהוה your Elohim. ‘In the Year of Yoḇel the field returns to him from whom he bought it, to him whose is the possession of the land.","book_name":"Leviticus"}
     ]},
     
     {"NoFalseWitness": [

@@ -134,7 +134,7 @@ nav span {
   width: 100%;
 }
 
-.btnShabbat, .btnLocateCitiesOfRefuge {
+.btnShabbat, .btnLocateCitiesOfRefuge, .btnDontSteal {
   display: flex;
   position: absolute;
   background-color: #93a5a5;
