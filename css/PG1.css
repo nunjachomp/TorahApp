@@ -134,7 +134,7 @@ nav span {
   width: 100%;
 }
 
-.btnShabbat, .btnLocateCitiesOfRefuge, .btnDontSteal {
+.btnTabernacle, .btnNoAsherim, .btnShabbat, .btnLocateCitiesOfRefuge, .btnDontSteal {
   display: flex;
   position: absolute;
   background-color: #93a5a5;
@@ -179,7 +179,9 @@ nav span {
   left: 208px;
 }
 
-
+/* .mapResults {
+  display: none;
+} */
 
 img {
   width: 105px;
@@ -189,7 +191,7 @@ img {
   width: 130px;
   position: absolute;
   left: 0px;
-  top: 264px;
+  top: 195px;
 }
 
 .API-Display-Title {
@@ -213,22 +215,4 @@ img {
   position: absolute;
   top: 240px;
   left: 208px;
-}
-
-
-
-
-
-
-
-.card9{
-  display: none;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  background-color:#fff;
-  padding: 10px;
-  border:black 1px solid;
 }

@@ -8,28 +8,18 @@
     ]},
     
     {"NoOthergods": [
-    {"chapter":20,"verse":2,"noOthergodsText":"I am יהוה your Elohim, who brought you out of the land of Mitsrayim, out of the house of slavery.","book_name":"Exodus"},
-    {"chapter":20,"verse":3,"noOthergodsText":"You have no other gods against My face.","book_name":"Exodus"},
-    {"chapter":20,"verse":23,"noOthergodsText":"You do not make besides Me gods of silver, and you do not make gods of gold for yourselves.","book_name":"Exodus"},
-    {"chapter":23,"verse":13,"noOthergodsText":"And in all that I have said to you take heed. And make no mention of the name of other gods, let it not be heard from your mouth.","book_name":"Exodus"},
-    {"chapter":6,"verse":14,"noOthergodsText":"Do not go after other gods, the gods of the peoples who are all around you;","book_name":"Deuteronomy"},
-    {"chapter":28,"verse":14,"noOthergodsText":"And do not turn aside from any of the words which I am commanding you today, right or left, to go after other gods to serve them.","book_name":"Deuteronomy"}
+    {"chapter":20,"verse":2,"noOthergodsText":"I am יהוה your Elohim, who brought you out of the land of Mitsrayim, out of the house of slavery. You have no other gods against My face. You do not make besides Me gods of silver, and you do not make gods of gold for yourselves. And in all that I have said to you take heed. And make no mention of the name of other gods, let it not be heard from your mouth. Do not go after other gods, the gods of the peoples who are all around you; And do not turn aside from any of the words which I am commanding you today, right or left, to go after other gods to serve them.","book_name":"Deuteronomy"}
     ]},
     
     {"NoIdols": [
-    {"chapter":20,"verse":4,"noIdolsText":"You do not make for yourself a carved image, or any likeness of that which is in the heavens above, or which is in the earth beneath, or which is in the waters under the earth,","book_name":"Exodus"},
-    {"chapter":20,"verse":5,"noIdolsText":"you do not bow down to them nor serve them. For I, יהוה your Elohim am a jealous Ěl, visiting the crookedness of the fathers on the children to the third and fourth generations of those who hate Me,","book_name":"Exodus"},
-    {"chapter":20,"verse":6,"noIdolsText":"but showing loving-commitment to thousands, to those who love Me and guard My commands.","book_name":"Exodus"},
-    {"chapter":19,"verse":4,"noIdolsText":"Do not turn to idols, and do not make for yourselves moulded gods. I am יהוה your Elohim.","book_name":"Leviticus"},
-    {"chapter":26,"verse":1,"noIdolsText":"Do not make idols for yourselves, and do not set up a carved image or a pillar for yourselves, and do not place a stone image in your land, to bow down to it. For I am יהוה your Elohim.","book_name":"Leviticus"},
+    {"chapter":20,"verse":4,"noIdolsText":"You do not make for yourself a carved image, or any likeness of that which is in the heavens above, or which is in the earth beneath, or which is in the waters under the earth, you do not bow down to them nor serve them. For I, יהוה your Elohim am a jealous Ěl, visiting the crookedness of the fathers on the children to the third and fourth generations of those who hate Me, but showing loving-commitment to thousands, to those who love Me and guard My commands.","book_name":"Exodus"},
+    {"chapter":19,"verse":4,"noIdolsText":"Do not turn to idols, and do not make for yourselves moulded gods. I am יהוה your Elohim. Do not make idols for yourselves, and do not set up a carved image or a pillar for yourselves, and do not place a stone image in your land, to bow down to it. For I am יהוה your Elohim.","book_name":"Leviticus"},
     {"chapter":12,"verse":3,"noIdolsText":"And you shall break down their altars, and smash their pillars, and burn their Ashĕrim with fire. And you shall cut down the carved images of their gods and shall destroy their name out of that place.","book_name":"Deuteronomy"}
     ]},
     
     {"NoNameVain": [
     {"chapter":20,"verse":7,"noVainText":"You do not bring the Name of יהוה your Elohim to naught, for יהוה does not leave the one unpunished who brings His Name to naught.","book_name":"Exodus"},
-    {"chapter":19,"verse":12,"noVainText":"And do not swear falsely by My Name and so profane the Name of your Elohim. I am יהוה.","book_name":"Leviticus"},
-    {"chapter":6,"verse":13,"noVainText":"Fear יהוה your Elohim and serve Him, and swear by His Name.","book_name":"Deuteronomy"},
-    {"chapter":10,"verse":20,"noVainText":"Fear יהוה your Elohim. Serve Him, and cling to Him, and swear by His Name.","book_name":"Deuteronomy"}
+    {"chapter":6,"verse":13,"noVainText":"Fear יהוה your Elohim and serve Him, and swear by His Name. (And do not swear falsely by My Name and so profane the Name of your Elohim. I am יהוה.) Fear יהוה your Elohim. Serve Him, and cling to Him, and swear by His Name.","book_name":"Deuteronomy"}
     ]},
     
     {"Shabbat": [

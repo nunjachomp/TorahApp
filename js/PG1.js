@@ -22,52 +22,39 @@ doNotWorkDropdownToggle.addEventListener("click", function () {
 });
 
 
-const grabShabbatPage = document.querySelector(".shabbatpage");
-const showShabbatButton = document.querySelector(".showShabbat");
-showShabbatButton.addEventListener("click", showShabbatPage)
+// const grabShabbatPage = document.querySelector(".shabbatpage");
+// const showShabbatButton = document.querySelector(".showShabbat");
+// showShabbatButton.addEventListener("click", showShabbatPage)
 
-function showShabbatPage () {
-  if (grabShabbatPage.style.display !== "block") {
-    grabShabbatPage.style.display = "block";
-  } else {
-    grabShabbatPage.style.display = "none";
-  }
-};
-
-
-const grabFatherMotherPage = document.querySelector(".fathermotherpage");
-const showFatherMotherButton = document.querySelector(".showFatherMother");
-showFatherMotherButton.addEventListener("click", showFatherMotherPage)
-
-function showFatherMotherPage () {
-  if (grabFatherMotherPage.style.display !== "block") {
-    grabFatherMotherPage.style.display = "block";
-  } else {
-    grabFatherMotherPage.style.display = "none";
-  }
-};
+// function showShabbatPage () {
+//   if (grabShabbatPage.style.display !== "block") {
+//     grabShabbatPage.style.display = "block";
+//   } else {
+//     grabShabbatPage.style.display = "none";
+//   }
+// };
 
 
+// const grabFatherMotherPage = document.querySelector(".fathermotherpage");
+// const showFatherMotherButton = document.querySelector(".showFatherMother");
+// showFatherMotherButton.addEventListener("click", showFatherMotherPage)
 
+// function showFatherMotherPage () {
+//   if (grabFatherMotherPage.style.display !== "block") {
+//     grabFatherMotherPage.style.display = "block";
+//   } else {
+//     grabFatherMotherPage.style.display = "none";
+//   }
+// };
 
+// const grabMapsPage = document.querySelector(".mapResults");
+// const showMapsButton = document.querySelector(".btnLocateCitiesOfRefuge");
+// showMapsButton.addEventListener("click", showMapsPage)
 
-
-
-
-
-
-
-
-
-
-//PG2---------------------------
-
-function showCard() {
-  const card = document.getElementById('card9');
-  card.style.display = 'block';
-}
-
-function hideCard() {
-  const card = document.getElementById('card9');
-  card.style.display = 'none';
-}
+// function showMapsPage () {
+//   if (grabMapsPage.style.display !== "block") {
+//     grabMapsPage.style.display = "block";
+//   } else {
+//     grabMapsPage.style.display = "none";
+//   }
+// };

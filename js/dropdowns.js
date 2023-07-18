@@ -126,21 +126,43 @@ Clicker(loveNeighborButton, loveNeighborPage);
 //----------------INSTANCE-1------------------------
 const noOthergodsButton = document.querySelector(".btnNoOthergodsButton");
 const noOthergodsPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[2]['NoOthergods'][1]['noOthergodsText']",
+  "headingShabbat",
+  "[2]['NoOthergods'][0]['noOthergodsText']",
 );
 
 Clicker(noOthergodsButton, noOthergodsPage);
 
+//----------------INSTANCE-1.1------------------------
+const tabernacleButton = document.querySelector(".btnTabernacle");
+const tabernaclePage = new GetVersesAndDisplayThem(
+  null,
+  null,
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Stiftshuette_Modell_Timnapark.jpg/300px-Stiftshuette_Modell_Timnapark.jpg",
+  "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=565&pageids=82935",
+  "['query']['pages']['82935']['title']", 
+  "['query']['pages']['82935']['extract']"
+);
+
+Clicker(tabernacleButton, tabernaclePage);
+
 //----------------INSTANCE-2------------------------
-const noIdolsButton = document.querySelector(".btnNoIdols");
-const noIdolsPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[3]['NoIdols'][0]['noIdolsText']",
+const noAsherimButton = document.querySelector(".btnNoAsherim");
+const noAsherimPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[3]['NoIdols'][2]['noIdolsText']",
   "https://upload.wikimedia.org/wikipedia/commons/b/b4/Tel_Rehov_Exhibition_090316_06.jpg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=114&pageids=2180929",
   "['query']['pages']['2180929']['title']", 
   "['query']['pages']['2180929']['extract']"
+);
+
+Clicker(noAsherimButton, noAsherimPage);
+
+//----------------INSTANCE-2.1------------------------
+const noIdolsButton = document.querySelector(".btnNoIdols");
+const noIdolsPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[3]['NoIdols'][1]['noIdolsText']",
 );
 
 Clicker(noIdolsButton, noIdolsPage);
@@ -149,8 +171,8 @@ Clicker(noIdolsButton, noIdolsPage);
 //----------------INSTANCE-3------------------------
 const noNameVainButton = document.querySelector(".btnNoNameVain");
 const noNameVainPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[4]['NoNameVain'][0]['noVainText']",
+  "headingShabbat",
+  "[4]['NoNameVain'][1]['noVainText']",
 );
 
 Clicker(noNameVainButton, noNameVainPage);
@@ -358,7 +380,7 @@ Clicker(noAdulteryButton, noAdulteryPage);
 const dontStealButton = document.querySelector(".btnDontSteal");
 const dontStealPage = new GetVersesAndDisplayThem(
   "headingShabbat",
-  "[21]['DontSteal'][0]['dontStealText']"
+  "[21]['DontSteal'][1]['dontStealText']"
 );
 
 Clicker(dontStealButton, dontStealPage);
@@ -420,7 +442,7 @@ Clicker(noFalseWitnessButton, noFalseWitnessPage);
 //----------------INSTANCE-10------------------------
 const doNotCovetButton = document.querySelector(".btnDoNotCovet");
 const doNotCovetPage = new GetVersesAndDisplayThem(
-  "displayResults",
+  "headingShabbat",
   "[28]['DoNotCovet'][0]['doNotCovetText']"
 );
 

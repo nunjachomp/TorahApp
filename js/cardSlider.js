@@ -30,63 +30,63 @@ const move = (e) => {
 })();
 const cardData = [
   {
-    title: "You have no other gods before Me.",
+    title: "You have no other gods before Me",
     imageSrc: "../images/Knesset_Menorah_Shema_Inscription.jpg",
-    text: "What does the Torah say about this?",
+    text: "<b>Category</b>: <br>You shall love your God with all your heart",
     link: "./PG1_NoOthergods.html"
   },
   {
-    title: "You do not make for yourself a carved image",
+    title: "You do not make an idol for yourself",
     imageSrc: "/images/the-2-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (3).jpg",
-    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "<b>Category</b>: <br>You shall love your God with all your heart",
     link: "./PG2_NoIdols.html"
   },
   {
-    title: "You do not bring the Name of יהוה your Elohim to naught",
+    title: "You do not take the Name of יהוה your Elohim in vain",
     imageSrc: "../images/Tetragrammaton11Q5-1.jpg",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    text: "<b>Category</b>: <br>You shall love your God with all your heart",
     link: "./PG3_NoNameVain.html"
   },
   {
     title: "Remember the Sabbath day, to sanctify it.",
     imageSrc: "/images/the-4-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (5).jpg",
-    text: "What does the Torah say about this?",
+    text: "<b>Category</b>: <br>You shall love your God with all your heart",
     link: "./PG4_Shabbat.html"
   },
   {
     title: "Respect your father and your mother",
     imageSrc: "/images/the-5-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (6).jpg",
-    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "<b>Category</b>: <br>You shall love your neighbour as yourself",
     link: "./PG5_FatherMother.html"
   },
   {
     title: "You do not murder.",
     imageSrc: "/images/the-6-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (7).jpg",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    text: "<b>Category</b>: <br>You shall love your neighbour as yourself",
     link: "./PG6_NoMurder.html"
   },
   {
     title: "You do not commit adultery.",
     imageSrc: "/images/the-7-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (8).jpg",
-    text: "What does the Torah say about this?",
+    text: "<b>Category</b>: <br>You shall love your neighbour as yourself",
     link: "./PG7_NoAdultery.html"
   },
   {
     title: "You do not steal.",
     imageSrc: "/images/the-8-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (9).jpg",
-    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "<b>Category</b>: <br>You shall love your neighbour as yourself",
     link: "./PG8_DontSteal.html"
   },
   {
     title: "You do not bear false witness against your neighbour.",
     imageSrc: "/images/the-9-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (10).jpg",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    text: "<b>Category</b>: <br>You shall love your neighbour as yourself",
     link: "./PG9_NoFalseWitness.html"
   },
   {
     title: "You shall not covet",
     imageSrc: "/images/the-10-commandment-icons-and-pictogram-illustration-depict-ten-commandments-teaching-beliefs-and-moral-value-by-christian-god-religion-2C3RN5A (11).jpg",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    text: "<b>Category</b>: <br>You shall love your neighbour as yourself",
     link: "./PG10_DontCovet.html"
   },
 ];
