@@ -21,20 +21,17 @@ doNotWorkDropdownToggle.addEventListener("click", function () {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var subMenuItems = document.querySelector('.sub-menu-items');
-  subMenuItems.style.display = 'none';
-});
+
 //PG2---------------------------
 
-function showCard() {
-  const card = document.getElementById('card9');
-  card.style.display = 'block';
-}
+// function showCard() {
+//   const card = document.getElementById('card9');
+//   card.style.display = 'block';
+// }
 
-function hideCard() {
-  const card = document.getElementById('card9');
-  card.style.display = 'none';
-}
+// function hideCard() {
+//   const card = document.getElementById('card9');
+//   card.style.display = 'none';
+// }
 
 
