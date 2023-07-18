@@ -80,6 +80,14 @@ nav span {
 }
 /*-------*/
 
+/* .shabbatpage {
+  display: none;
+}
+
+.fathermotherpage {
+  display: none;
+} */
+
 .container {
   position: relative;
   /* border: 1px solid rgb(206, 17, 149); */
@@ -126,7 +134,7 @@ nav span {
   width: 100%;
 }
 
-.btnShabbat {
+.btnShabbat, .btnLocateCitiesOfRefuge {
   display: flex;
   position: absolute;
   background-color: #93a5a5;
@@ -138,15 +146,11 @@ nav span {
   top: 40px;
 }
 
-.calendar-button {
+.calendar-button, .do-not-work-button, .btnFatherMother, .btnOldMan, .btnCursed {
   font-size: 24px;
   padding: 10px 30px;
 }
 
-.do-not-work-button {
-  font-size: 24px;
-  padding: 10px 30px;
-}
  .dropdown-menu, .side-menu {
   display: none;
   background: none;
@@ -217,7 +221,7 @@ img {
 
 
 
-/* .card9{
+.card9{
   display: none;
   position: absolute;
   top: 10%;
@@ -227,4 +231,4 @@ img {
   background-color:#fff;
   padding: 10px;
   border:black 1px solid;
-} */
+}

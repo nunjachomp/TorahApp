@@ -270,24 +270,60 @@ Clicker(noFireButton, noFirePage);
 //----------------INSTANCE-5------------------------
 const fatherMotherButton = document.querySelector(".btnFatherMother");
 const fatherMotherPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[16]['FatherMother'][0]['fatherMotherText']",
+  "headingShabbat",
+  "[16]['FatherMother'][1]['fatherMotherText']",
 );
 
 Clicker(fatherMotherButton, fatherMotherPage);
 
+//----------------INSTANCE-5.1------------------------
+const oldManButton = document.querySelector(".btnOldMan");
+const oldManPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[16]['FatherMother'][2]['fatherMotherText']",
+);
+
+Clicker(oldManButton, oldManPage);
+
+//----------------INSTANCE-5.2------------------------
+const cursedButton = document.querySelector(".btnCursed");
+const cursedPage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[16]['FatherMother'][3]['fatherMotherText']",
+);
+
+Clicker(cursedButton, cursedPage);
+
 //----------------INSTANCE-6------------------------
-const dontMurderButton = document.querySelector(".btnDontMurder");
-const dontMurderPage = new GetVersesAndDisplayThem(
-  "displayResults",
-  "[17]['DontMurder'][0]['dontMurderText']",
+const locateCitiesOfRefugeButton = document.querySelector(".btnLocateCitiesOfRefuge");
+const locateCitiesOfRefugePage = new GetVersesAndDisplayThem(
+  null,
+  "",
   "https://upload.wikimedia.org/wikipedia/commons/5/56/Mediterranean_Sea_East_location_map.svg",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=210&pageids=2575978",
   "['query']['pages']['2575978']['title']",
   "['query']['pages']['2575978']['extract']"
 );
 
-Clicker(dontMurderButton, dontMurderPage);
+Clicker(locateCitiesOfRefugeButton, locateCitiesOfRefugePage);
+
+//----------------INSTANCE-6.1------------------------
+const citiesOfRefugeButton = document.querySelector(".btnCitiesOfRefuge");
+const citiesOfRefugePage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[18]['DontMurder-CitiesOfRefuge'][0]['citiesOfRefugeText']",
+);
+
+Clicker(citiesOfRefugeButton, citiesOfRefugePage);
+
+//----------------INSTANCE-6.2------------------------
+const warfareButton = document.querySelector(".btnWarfare");
+const warfarePage = new GetVersesAndDisplayThem(
+  "headingShabbat",
+  "[19]['DontMurder-Warfare'][0]['warText']",
+);
+
+Clicker(warfareButton, warfarePage);
 
 //----------------INSTANCE-7------------------------
 const noAdulteryButton = document.querySelector(".btnNoAdultery");
