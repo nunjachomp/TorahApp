@@ -179,9 +179,13 @@ nav span {
   left: 208px;
 }
 
-/* .mapResults {
+.mapResults {
+  z-index: 1;
+  position: absolute;
+  left: 3%;
+  top: 45%;
   display: none;
-} */
+}
 
 img {
   width: 105px;
@@ -209,6 +213,7 @@ img {
   top: 400px;
   text-wrap: balance;
   font-weight: 600;
+  padding-bottom: 2rem;
 }
 
 .miscResults {
