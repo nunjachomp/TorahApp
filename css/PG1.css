@@ -119,82 +119,13 @@ nav span {
   /* border: 1px solid rgb(14, 165, 39); */
 }
 
-.btn-group {
-  display: flex;
-  position: absolute;
-  top: 105%;
-  left: 0%;
-  width: 100%;
-  height: 98px;
-  /* border: 1px solid red; */
-  justify-content: center;
-}
-
 .Shabbat-API-Container {
   display: flex;
   position: absolute;
-  top: 44%;
-  width: 100%;
-}
-
-.btnTabernacle,
-.btnNoAsherim,
-.btnShabbat,
-.btnLocateCitiesOfRefuge,
-.btnDontSteal {
-  display: flex;
-  position: absolute;
-  background-color: #93a5a5;
-}
-
-.shabbat-category-box {
-  display: flex;
-  position: relative;
-  top: 40px;
-}
-
-.dropdown-menu,
-.side-menu {
-  display: none;
-  background: none;
-  border: none;
-}
-
-.dropdown-menu > ul, .side-menu > ul{
-  margin-left: 1rem;
-}
-
-.dropdown-menu>ul>li,
-.side-menu>ul>li {
-  list-style-type: none;
-  color: #000000;
-  font-weight: 500;
-}
-
-.dropdown-menu {
-  left: -2px;
-  top: 51px;
-  background-image: url(../images/parchmentS.jpg);
-}
-
-.side-menu {
-  position: absolute;
-  top: 57%;
-  left: 97px;
-  width: 195px;
-  background-image: url(../images/parchmentS.jpg);
-}
-
-.Shabbat-API-Container {
   top: 105%;
   left: -3%;
   height: 300px;
-}
-
-.displayResults {
-  position: absolute;
-  top: 240px;
-  left: 208px;
+  width: 100%;
 }
 
 .mapResults {
@@ -233,17 +164,95 @@ img {
   padding-bottom: 2rem;
 }
 
+.displayResults {
+  position: absolute;
+  top: 240px;
+  left: 208px;
+}
+
 .miscResults {
   position: absolute;
   top: 240px;
   left: 208px;
 }
 
-.btnNoOthergodsButton, .btnNoIdols, .btnNoNameVain, .calendar-button,
-.do-not-work-button, .btnFatherMother,
-.btnOldMan,.btnCursed, .btnCitiesOfRefuge, .btnWarfare, .btnNoAdultery, .btnShmitah, .btnLandBoundaries, .btnYearOfRelease, .btnYovel, .btnLandLeases, .btnNoFalseWitness, .btnDoNotCovet {
-  /* font-size: 24px;
-  padding: 0 10px; */
+.btn-group {
+  display: flex;
+  position: absolute;
+  top: 105%;
+  left: 0%;
+  width: 100%;
+  height: 98px;
+  /* border: 1px solid red; */
+  justify-content: center;
+}
+
+.btnTabernacle,
+.btnNoAsherim,
+.btnShabbat,
+.btnLocateCitiesOfRefuge,
+.btnDontSteal {
+  display: flex;
+  position: absolute;
+  background-color: #93a5a5;
+}
+
+.shabbat-category-box {
+  display: flex;
+  position: relative;
+  top: 40px;
+}
+
+.btnNoOthergodsButton,
+.btnNoIdols,
+.btnNoNameVain,
+.calendar-button,
+.do-not-work-button,
+.btnFatherMother,
+.btnOldMan,
+.btnCursed,
+.btnCitiesOfRefuge,
+.btnWarfare,
+.btnNoAdultery,
+.btnShmitah,
+.btnLandBoundaries,
+.btnYearOfRelease,
+.btnYovel,
+.btnLandLeases,
+.btnNoFalseWitness,
+.btnDoNotCovet {
   height: 53px;
 }
 
+.dropdown-menu,
+.side-menu {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.dropdown-menu {
+  left: -2px;
+  top: 51px;
+  background-image: url(../images/parchmentS.jpg);
+}
+
+.side-menu {
+  position: absolute;
+  top: 57%;
+  left: 97px;
+  width: 195px;
+  background-image: url(../images/parchmentS.jpg);
+}
+
+.dropdown-menu>ul,
+.side-menu>ul {
+  margin-left: 1rem;
+}
+
+.dropdown-menu>ul>li,
+.side-menu>ul>li {
+  list-style-type: none;
+  color: #000000;
+  font-weight: 500;
+}
