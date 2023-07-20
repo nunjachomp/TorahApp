@@ -33,22 +33,24 @@ nav li {
 
 nav a {
   display: flex;
-  padding-inline: 3rem;
+  padding-inline: 1rem;
   text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+  text-align: center;
 }
 
 .sub-menu-items {
   display: none;
   position: absolute;
   top: 70%;
-  left: 45%;
+  left: 37%;
   background-color: #fff;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url(../images/parchment2.1.jpg);
 }
 
 .sub-menu:hover .sub-menu-items {
@@ -71,7 +73,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #a1270b;
+  color: #ffffff;
 }
 
 nav span {
@@ -103,6 +105,7 @@ nav span {
 .title {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 48px;
   margin-bottom: 30px;
   color: #000000;
@@ -159,7 +162,6 @@ img {
   position: absolute;
   left: 402px;
   top: 193px;
-  text-wrap: balance;
   font-weight: 600;
   padding-bottom: 2rem;
 }
@@ -229,12 +231,13 @@ img {
   display: none;
   background: none;
   border: none;
+  background-image: url(../images/parchmentS.jpg);
+  text-align: center;
 }
 
 .dropdown-menu {
   left: -2px;
   top: 51px;
-  background-image: url(../images/parchmentS.jpg);
 }
 
 .side-menu {
@@ -242,12 +245,6 @@ img {
   top: 57%;
   left: 97px;
   width: 195px;
-  background-image: url(../images/parchmentS.jpg);
-}
-
-.dropdown-menu>ul,
-.side-menu>ul {
-  margin-left: 1rem;
 }
 
 .dropdown-menu>ul>li,
