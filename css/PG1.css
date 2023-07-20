@@ -6,7 +6,7 @@
 body {
   padding: 0px;
   text-align: none;
-  background-image: url(../images/parchment2.1.jpg);
+  background-image: url(../images/parchment2.2.jpg);
 }
 
 /* Nav Bar */
@@ -35,11 +35,12 @@ nav a {
   display: flex;
   padding-inline: 3rem;
   text-decoration: none;
-  color:  #fff;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
 }
+
 .sub-menu-items {
   display: none;
   position: absolute;
@@ -78,6 +79,7 @@ nav span {
   font-weight: 900;
   text-shadow: -1px 0 #b6ab8f, 0 1px #b6ab8f, 1px 0 #b6ab8f, 0 -1px #b6ab8f;
 }
+
 /*-------*/
 
 /* .shabbatpage {
@@ -104,7 +106,7 @@ nav span {
   font-size: 48px;
   margin-bottom: 30px;
   color: #000000;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
   /* border: 1px solid rgb(155, 165, 14); */
 }
 
@@ -113,7 +115,7 @@ nav span {
   justify-content: center;
   text-align: center;
   margin: 1rem;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
   /* border: 1px solid rgb(14, 165, 39); */
 }
 
@@ -123,6 +125,7 @@ nav span {
   top: 105%;
   left: 0%;
   width: 100%;
+  height: 98px;
   /* border: 1px solid red; */
   justify-content: center;
 }
@@ -134,44 +137,59 @@ nav span {
   width: 100%;
 }
 
-.btnTabernacle, .btnNoAsherim, .btnShabbat, .btnLocateCitiesOfRefuge, .btnDontSteal {
+.btnTabernacle,
+.btnNoAsherim,
+.btnShabbat,
+.btnLocateCitiesOfRefuge,
+.btnDontSteal {
   display: flex;
   position: absolute;
   background-color: #93a5a5;
 }
 
-.shabbat-category-box{
+.shabbat-category-box {
   display: flex;
   position: relative;
   top: 40px;
 }
 
-.calendar-button, .do-not-work-button, .btnFatherMother, .btnOldMan, .btnCursed {
-  font-size: 24px;
-  padding: 10px 30px;
-}
-
- .dropdown-menu, .side-menu {
+.dropdown-menu,
+.side-menu {
   display: none;
   background: none;
   border: none;
- }
+}
 
- .dropdown-menu > ul > li, .side-menu > ul > li {
+.dropdown-menu > ul, .side-menu > ul{
+  margin-left: 1rem;
+}
+
+.dropdown-menu>ul>li,
+.side-menu>ul>li {
   list-style-type: none;
   color: #000000;
   font-weight: 500;
- }
+}
 
- .dropdown-menu {
-  left: 23px;
- }
+.dropdown-menu {
+  left: -2px;
+  top: 51px;
+  background-image: url(../images/parchmentS.jpg);
+}
 
- .side-menu {
+.side-menu {
   position: absolute;
-  top: 119%;
-  left: 181px;
- }
+  top: 57%;
+  left: 97px;
+  width: 195px;
+  background-image: url(../images/parchmentS.jpg);
+}
+
+.Shabbat-API-Container {
+  top: 105%;
+  left: -3%;
+  height: 300px;
+}
 
 .displayResults {
   position: absolute;
@@ -180,37 +198,36 @@ nav span {
 }
 
 .mapResults {
-  z-index: 1;
   position: absolute;
   left: 3%;
-  top: 45%;
-  display: none;
+  top: 40%;
 }
 
 img {
-  width: 105px;
+  width: 200px;
+  padding-bottom: 1rem;
 }
 
 .display-API-Image {
   width: 130px;
   position: absolute;
-  left: 0px;
-  top: 195px;
+  left: 110px;
+  top: 153px;
 }
 
 .API-Display-Title {
   position: absolute;
-  left: 0px;
-  top: 350px;
+  left: 401px;
+  top: 134px;
   font-size: 26px;
   color: red;
 }
 
 .API-Display {
-  width: 90%;
+  width: 50%;
   position: absolute;
-  left: 0px;
-  top: 400px;
+  left: 402px;
+  top: 193px;
   text-wrap: balance;
   font-weight: 600;
   padding-bottom: 2rem;
@@ -221,3 +238,12 @@ img {
   top: 240px;
   left: 208px;
 }
+
+.btnNoOthergodsButton, .btnNoIdols, .btnNoNameVain, .calendar-button,
+.do-not-work-button, .btnFatherMother,
+.btnOldMan,.btnCursed, .btnCitiesOfRefuge, .btnWarfare, .btnNoAdultery, .btnShmitah, .btnLandBoundaries, .btnYearOfRelease, .btnYovel, .btnLandLeases, .btnNoFalseWitness, .btnDoNotCovet {
+  /* font-size: 24px;
+  padding: 0 10px; */
+  height: 53px;
+}
+

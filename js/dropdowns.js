@@ -339,13 +339,25 @@ const locateCitiesOfRefugeButton = document.querySelector(".btnLocateCitiesOfRef
 const locateCitiesOfRefugePage = new GetVersesAndDisplayThem(
   null,
   "",
-  "https://upload.wikimedia.org/wikipedia/commons/5/56/Mediterranean_Sea_East_location_map.svg",
+  "",
   "https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&prop=extracts&exintro&explaintext&redirects=1&exchars=210&pageids=2575978",
   "['query']['pages']['2575978']['title']",
   "['query']['pages']['2575978']['extract']"
 );
 
 Clicker(locateCitiesOfRefugeButton, locateCitiesOfRefugePage);
+
+//---Map---Toggle-------
+let toggle = button => {
+  let element = document.querySelector(".mapResults");
+  let hidden = element.getAttribute("hidden");
+  
+  if (hidden) {
+     element.removeAttribute("hidden");
+  } else {
+     element.setAttribute("hidden", "hidden");
+  }
+}
 
 //----------------INSTANCE-6.1------------------------
 const citiesOfRefugeButton = document.querySelector(".btnCitiesOfRefuge");
@@ -484,4 +496,5 @@ window.onclick = function (event) {
   }
 };
 //----------------------------------------------------------
+
 
