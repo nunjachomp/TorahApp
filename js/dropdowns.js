@@ -46,8 +46,6 @@
     try {
       let response = await fetch(this.wikiAPI);
       let data = await response.json();
-      data = JSON.stringify(data);
-      data = JSON.parse(data);
       displayApiTitle.innerHTML = eval(`data${this.wikiTitle}`);
       displayAPI.innerHTML = eval(`data${this.wikiSummary}`);
     } catch (error) {
