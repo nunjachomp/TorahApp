@@ -58,3 +58,16 @@ doNotWorkDropdownToggle.addEventListener("click", function () {
 //     grabMapsPage.style.display = "none";
 //   }
 // };
+
+document.addEventListener("click", function (event) {
+  if (!calendarDropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+    dropdownMenu.style.display = "none";
+  }
+});
+
+
+document.addEventListener("click", function (event) {
+  if (!doNotWorkDropdownToggle.contains(event.target) && !sideButtonMenu.contains(event.target)) {
+    sideButtonMenu.style.display = "none";
+  }
+});

@@ -31,6 +31,7 @@
 
   async getAndPostWikiImage() {
     try {
+      document.querySelector(".display-API-Image").innerHTML = "";
       const response = await fetch(this.photoAPI);
       const imgElement = document.createElement("img");
       imgElement.src = response.url;
@@ -44,6 +45,8 @@
 
    async getWikiTitleAndSummary() {
     try {
+      document.querySelector(".API-Display-Title").innerHTML = "";
+      document.querySelector(".API-Display").innerHTML = "";
       let response = await fetch(this.wikiAPI);
       let data = await response.json();
       displayApiTitle.innerHTML = eval(`data${this.wikiTitle}`);
@@ -94,6 +97,17 @@ async function Clicker(button, page) {
   });
 }
 
+async function ClickerDropdowns(button, page) {
+  button.addEventListener("click", () => {
+      if (
+      page.getVerses(),
+      page.getAndPostWikiImage(),
+      page.getWikiTitleAndSummary())
+    {
+      page.removeAPIElements()}
+    })
+  };
+
 
 //----------------INSTANCE-T0------------------------
 const loveGodButton = document.querySelector(".section1");
@@ -128,7 +142,7 @@ const noOthergodsPage = new GetVersesAndDisplayThem(
   "[2]['NoOthergods'][0]['noOthergodsText']",
 );
 
-Clicker(noOthergodsButton, noOthergodsPage);
+ClickerDropdowns(noOthergodsButton, noOthergodsPage);
 
 //----------------INSTANCE-1.1------------------------
 const tabernacleButton = document.querySelector(".btnTabernacle");
@@ -163,7 +177,7 @@ const noIdolsPage = new GetVersesAndDisplayThem(
   "[3]['NoIdols'][1]['noIdolsText']",
 );
 
-Clicker(noIdolsButton, noIdolsPage);
+ClickerDropdowns(noIdolsButton, noIdolsPage);
 
 
 //----------------INSTANCE-3------------------------
@@ -173,7 +187,7 @@ const noNameVainPage = new GetVersesAndDisplayThem(
   "[4]['NoNameVain'][1]['noVainText']",
 );
 
-Clicker(noNameVainButton, noNameVainPage);
+ClickerDropdowns(noNameVainButton, noNameVainPage);
 
 //----------------INSTANCE-4------------------------
 const shabbatButton = document.querySelector(".btnShabbat");
@@ -195,7 +209,7 @@ const roshHaShanahPage = new GetVersesAndDisplayThem(
   "[6]['Shabbat-Calendar'][0]['calendarText']",
 );
 
-Clicker(roshHaShanahButton, roshHaShanahPage);
+ClickerDropdowns(roshHaShanahButton, roshHaShanahPage);
 
 //----------------INSTANCE-4.1------------------------
 const pesachButton = document.querySelector(".btnPesach");
@@ -208,7 +222,7 @@ const pesachPage = new GetVersesAndDisplayThem(
   "['query']['pages']['23059']['extract']"
 );
 
-Clicker(pesachButton, pesachPage);
+ClickerDropdowns(pesachButton, pesachPage);
 
 //----------------INSTANCE-4.2------------------------
 const matzotButton = document.querySelector(".btnMatzot");
@@ -217,7 +231,7 @@ const matzotPage = new GetVersesAndDisplayThem(
   "[10]['Shabbat-Holydays-Matzot'][0]['matzotText']",
 );
 
-Clicker(matzotButton, matzotPage);
+ClickerDropdowns(matzotButton, matzotPage);
 
 //----------------INSTANCE-4.3------------------------
 const bikurimButton = document.querySelector(".btnBikurim");
@@ -226,7 +240,7 @@ const bikurimPage = new GetVersesAndDisplayThem(
   "[11]['Shabbat-Holydays-BikurimHarvest'][0]['bikurimHarvestText']",
 );
 
-Clicker(bikurimButton, bikurimPage);
+ClickerDropdowns(bikurimButton, bikurimPage);
 
 //----------------INSTANCE-4.4------------------------
 const shavuotButton = document.querySelector(".btnShavuot");
@@ -239,7 +253,7 @@ const shavuotPage = new GetVersesAndDisplayThem(
   "['query']['pages']['228264']['extract']"
 );
 
-Clicker(shavuotButton, shavuotPage);
+ClickerDropdowns(shavuotButton, shavuotPage);
 
 //----------------INSTANCE-4.5------------------------
 const yomtruahButton = document.querySelector(".btnYomTruah");
@@ -252,7 +266,7 @@ const yomtruahPage = new GetVersesAndDisplayThem(
   "['query']['pages']['19596764']['extract']"
 );
 
-Clicker(yomtruahButton, yomtruahPage);
+ClickerDropdowns(yomtruahButton, yomtruahPage);
 
 //----------------INSTANCE-4.6------------------------
 const yomKippurButton = document.querySelector(".btnYomKippur");
@@ -265,7 +279,7 @@ const yomKippurPage = new GetVersesAndDisplayThem(
   "['query']['pages']['34382']['extract']"
 );
 
-Clicker(yomKippurButton, yomKippurPage);
+ClickerDropdowns(yomKippurButton, yomKippurPage);
 
 //----------------INSTANCE-4.7------------------------
 const sukkotButton = document.querySelector(".btnSukkot");
@@ -278,7 +292,7 @@ const sukkotPage = new GetVersesAndDisplayThem(
   "['query']['pages']['28622']['extract']"
 );
 
-Clicker(sukkotButton, sukkotPage);
+ClickerDropdowns(sukkotButton, sukkotPage);
 
 //----------------INSTANCE-4.7-T1------------------------
 const noOthersWorkButton = document.querySelector(".btnNoOthersWork");
@@ -287,7 +301,7 @@ const noOthersWorkPage = new GetVersesAndDisplayThem(
   "[5]['Shabbat'][2]['shabbatText']",
 );
 
-Clicker(noOthersWorkButton, noOthersWorkPage);
+ClickerDropdowns(noOthersWorkButton, noOthersWorkPage);
 
 //----------------INSTANCE-4.7-T2------------------------
 const noCookingButton = document.querySelector(".btnNoCooking");
@@ -296,7 +310,7 @@ const noCookingPage = new GetVersesAndDisplayThem(
   "[5]['Shabbat'][4]['shabbatText']",
 );
 
-Clicker(noCookingButton, noCookingPage);
+ClickerDropdowns(noCookingButton, noCookingPage);
 
 //----------------INSTANCE-4.7-T3------------------------
 const noFireButton = document.querySelector(".btnNoFire");
@@ -305,7 +319,7 @@ const noFirePage = new GetVersesAndDisplayThem(
   "[5]['Shabbat'][6]['shabbatText']",
 );
 
-Clicker(noFireButton, noFirePage);
+ClickerDropdowns(noFireButton, noFirePage);
 
 //----------------INSTANCE-5------------------------
 const fatherMotherButton = document.querySelector(".btnFatherMother");
@@ -314,7 +328,7 @@ const fatherMotherPage = new GetVersesAndDisplayThem(
   "[16]['FatherMother'][1]['fatherMotherText']",
 );
 
-Clicker(fatherMotherButton, fatherMotherPage);
+ClickerDropdowns(fatherMotherButton, fatherMotherPage);
 
 //----------------INSTANCE-5.1------------------------
 const oldManButton = document.querySelector(".btnOldMan");
@@ -323,7 +337,7 @@ const oldManPage = new GetVersesAndDisplayThem(
   "[16]['FatherMother'][2]['fatherMotherText']",
 );
 
-Clicker(oldManButton, oldManPage);
+ClickerDropdowns(oldManButton, oldManPage);
 
 //----------------INSTANCE-5.2------------------------
 const cursedButton = document.querySelector(".btnCursed");
@@ -332,7 +346,7 @@ const cursedPage = new GetVersesAndDisplayThem(
   "[16]['FatherMother'][3]['fatherMotherText']",
 );
 
-Clicker(cursedButton, cursedPage);
+ClickerDropdowns(cursedButton, cursedPage);
 
 //----------------INSTANCE-6------------------------
 const locateCitiesOfRefugeButton = document.querySelector(".btnLocateCitiesOfRefuge");
@@ -348,7 +362,8 @@ const locateCitiesOfRefugePage = new GetVersesAndDisplayThem(
 Clicker(locateCitiesOfRefugeButton, locateCitiesOfRefugePage);
 
 //---Map---Toggle-------
-let toggle = button => {
+let toggle = () => {
+  // document.querySelector(".mapResults").innerHTML = "";
   let element = document.querySelector(".mapResults");
   let hidden = element.getAttribute("hidden");
   
@@ -384,7 +399,7 @@ const noAdulteryPage = new GetVersesAndDisplayThem(
   "[20]['NoAdultery'][1]['noAdulteryText']",
 );
 
-Clicker(noAdulteryButton, noAdulteryPage);
+ClickerDropdowns(noAdulteryButton, noAdulteryPage);
 
 //----------------INSTANCE-8------------------------
 const dontStealButton = document.querySelector(".btnDontSteal");
@@ -393,7 +408,7 @@ const dontStealPage = new GetVersesAndDisplayThem(
   "[21]['DontSteal'][1]['dontStealText']"
 );
 
-Clicker(dontStealButton, dontStealPage);
+ClickerDropdowns(dontStealButton, dontStealPage);
 
 //----------------INSTANCE-8.1------------------------
 const shmitaButton = document.querySelector(".btnShmitah");
@@ -402,7 +417,7 @@ const shmitaPage = new GetVersesAndDisplayThem(
   "[22]['DontSteal-PropertyRules-Shmitah'][0]['shmitahText']"
 );
 
-Clicker(shmitaButton, shmitaPage);
+ClickerDropdowns(shmitaButton, shmitaPage);
 
 //----------------INSTANCE-8.2------------------------
 const landBoundariesButton = document.querySelector(".btnLandBoundaries");
@@ -411,7 +426,7 @@ const landBoundariesPage = new GetVersesAndDisplayThem(
   "[23]['DontSteal-LandBoundaries'][0]['boundaryStoneText']"
 );
 
-Clicker(landBoundariesButton, landBoundariesPage);
+ClickerDropdowns(landBoundariesButton, landBoundariesPage);
 
 //----------------INSTANCE-8.3------------------------
 const yearOfReleaseButton = document.querySelector(".btnYearOfRelease");
@@ -420,7 +435,7 @@ const yearOfReleasePage = new GetVersesAndDisplayThem(
   "[24]['DontSteal-YearOfRelease'][0]['yearOfReleaseText']"
 );
 
-Clicker(yearOfReleaseButton, yearOfReleasePage);
+ClickerDropdowns(yearOfReleaseButton, yearOfReleasePage);
 
 //----------------INSTANCE-8.4------------------------
 const yovelButton = document.querySelector(".btnYovel");
@@ -429,7 +444,7 @@ const yovelPage = new GetVersesAndDisplayThem(
   "[25]['DontSteal-Yovelim'][0]['yovelText']"
 );
 
-Clicker(yovelButton, yovelPage);
+ClickerDropdowns(yovelButton, yovelPage);
 
 //----------------INSTANCE-8.5------------------------
 const landLeasesButton = document.querySelector(".btnLandLeases");
@@ -438,7 +453,7 @@ const landLeasesPage = new GetVersesAndDisplayThem(
   "[26]['DontSteal-LandLeases'][0]['landLeaseText']"
 );
 
-Clicker(landLeasesButton, landLeasesPage);
+ClickerDropdowns(landLeasesButton, landLeasesPage);
 
 //----------------INSTANCE-9------------------------
 const noFalseWitnessButton = document.querySelector(".btnNoFalseWitness");
@@ -447,7 +462,7 @@ const noFalseWitnessPage = new GetVersesAndDisplayThem(
   "[27]['NoFalseWitness'][1]['dontFalselyWitnessText']"
 );
 
-Clicker(noFalseWitnessButton, noFalseWitnessPage);
+ClickerDropdowns(noFalseWitnessButton, noFalseWitnessPage);
 
 //----------------INSTANCE-10------------------------
 const doNotCovetButton = document.querySelector(".btnDoNotCovet");
@@ -456,7 +471,7 @@ const doNotCovetPage = new GetVersesAndDisplayThem(
   "[28]['DoNotCovet'][0]['doNotCovetText']"
 );
 
-Clicker(doNotCovetButton, doNotCovetPage);
+ClickerDropdowns(doNotCovetButton, doNotCovetPage);
 
 
 //Primary Buttons Functionality
