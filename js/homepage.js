@@ -1,3 +1,17 @@
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCX2x-sEwhNuKnJGA741KWOpx44iWIqKKQ",
+  authDomain: "the-torah-app.firebaseapp.com",
+  projectId: "the-torah-app",
+  storageBucket: "the-torah-app.appspot.com",
+  messagingSenderId: "1058897003287",
+  appId: "1:1058897003287:web:83117ddf19ffe852c5ad52"
+};
+
+const app = initializeApp(firebaseConfig);
+
+
 let isDown = false;
 let startX;
 let scrollLeft;
